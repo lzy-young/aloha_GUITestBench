@@ -1,0 +1,1236 @@
+[
+    {
+        "defect_id": "newpipe_1",
+        "app_name": "newpipe",
+        "defect_cate": "UI",
+        "defect_type": "Unexpected Task Result",
+        "defect_desc": "The Open In Browser is not working.",
+        "instructions": {
+            "defects_oriented": [
+                "Tap the 'OPEN IN BROWSER' button to view the item in a web browser."
+            ],
+            "exploration_oriented": [
+                "Open the trending content in an external web browser to view the full details.",
+                "The in-app content failed to load. Find an alternative way to access this content through a web browser."
+            ]
+        },
+        "defect_info": {
+            "github_link": "https://github.com/TeamNewPipe/NewPipe",
+            "reproduce_step": 1
+        },
+        "app_info": {
+            "apk_name": "NewPipe",
+            "apk_version": "NewPipe_v0.27.2.apk",
+            "activity": "org.schabi.newpipe.debug/org.schabi.newpipe.MainActivity",
+            "app_desc": "NewPipe - Lightweight YouTube frontend\\n\\nNewPipe works by fetching the required data from the official API (e.g. PeerTube) of the service you're using. If the official API is restricted (e.g. YouTube) for our purposes, or is proprietary, the app parses the website or uses an internal API instead. This means that you don't need an account on any service to use NewPipe.Also, since they are free and open source software, neither the app nor the Extractor use any proprietary libraries or frameworks, such as Google Play Services. This means you can use NewPipe on devices or custom ROMs that do not have Google apps installed\\n\\nFeatures\\n\\nWatch videos at resolutions up to 4K\\n\\nListen to audio in the background, only loading the audio stream to save data\\n\\nPopup mode (floating player, aka Picture-in-Picture)\\n\\nWatch live streams\\n\\nShow/hide subtitles/closed captions\\n\\nSearch videos and audios (on YouTube, you can specify the content language as well)\\n\\nEnqueue videos (and optionally save them as local playlists)\\n\\nShow/hide general information about videos (such as description and tags)\\n\\nShow/hide next/related videos\\n\\nShow/hide comments\\n\\nSearch videos, audios, channels, playlists and albums\\n\\nBrowse videos and audios within a channel\\n\\nSubscribe to channels (yes, without logging into any account!)\\n\\nGet notifications about new videos from channels you're subscribed to\\n\\nCreate and edit channel groups (for easier browsing and management)\\n\\nBrowse video feeds generated from your channel groups\\n\\nView and search your watch history\\n\\nSearch and watch playlists (these are remote playlists, which means they're fetched from the service you're browsing)Create and edit local playlists (these are created and saved within the app, and have nothing to do with any service)Download videos/audios/subtitles (closed captions)\\n\\n\\n\\nOpen in Kodi\\n\\nWatch/Block age-restricted material.\\n\\n",
+            "app_cate": "Internet,Multimedia"
+        },
+        "eval": {
+            "judge_method": "rule",
+            "observation": "reproduce/newpipe_1/1.png",
+            "action_type": "click",
+            "bbox": [
+                [
+                    338,
+                    1488
+                ],
+                [
+                    743,
+                    1583
+                ]
+            ],
+            "text": null,
+            "direction": null,
+            "add_info": null
+        }
+    },
+    {
+        "defect_id": "newpipe_2",
+        "app_name": "newpipe",
+        "defect_cate": "UI",
+        "defect_type": "Operation No Response",
+        "defect_desc": "The button \"View on Website\" is not working.",
+        "instructions": {
+            "defects_oriented": [
+                "Open the drawer, select About & Faq, then click View On Website to access the NewPipe site.",
+                "Open the drawer, select About & Faq, then tap View On Website."
+            ],
+            "exploration_oriented": [
+                "Go to the About page and open the NewPipe website in my browser to check the frequently asked questions.",
+                "Please Go to the About page and open the FAQ section on the NewPipe website for troubleshooting help.",
+                "Navigate to About & FAQ and open the NewPipe website to read the contribution guidelines.",
+                "Go to the app's About page and open its website to access the donation page for supporting the developers.",
+                "Check the About page and open the NewPipe website in my browser to check its documentation and support resources."
+            ]
+        },
+        "defect_info": {
+            "github_link": "https://github.com/TeamNewPipe/NewPipe",
+            "reproduce_step": 3
+        },
+        "app_info": {
+            "apk_name": "NewPipe",
+            "apk_version": "NewPipe_v0.27.2.apk",
+            "activity": "org.schabi.newpipe.debug/org.schabi.newpipe.MainActivity",
+            "app_desc": "NewPipe - Lightweight YouTube frontend\\n\\nNewPipe works by fetching the required data from the official API (e.g. PeerTube) of the service you're using. If the official API is restricted (e.g. YouTube) for our purposes, or is proprietary, the app parses the website or uses an internal API instead. This means that you don't need an account on any service to use NewPipe.Also, since they are free and open source software, neither the app nor the Extractor use any proprietary libraries or frameworks, such as Google Play Services. This means you can use NewPipe on devices or custom ROMs that do not have Google apps installed\\n\\nFeatures\\n\\nWatch videos at resolutions up to 4K\\n\\nListen to audio in the background, only loading the audio stream to save data\\n\\nPopup mode (floating player, aka Picture-in-Picture)\\n\\nWatch live streams\\n\\nShow/hide subtitles/closed captions\\n\\nSearch videos and audios (on YouTube, you can specify the content language as well)\\n\\nEnqueue videos (and optionally save them as local playlists)\\n\\nShow/hide general information about videos (such as description and tags)\\n\\nShow/hide next/related videos\\n\\nShow/hide comments\\n\\nSearch videos, audios, channels, playlists and albums\\n\\nBrowse videos and audios within a channel\\n\\nSubscribe to channels (yes, without logging into any account!)\\n\\nGet notifications about new videos from channels you're subscribed to\\n\\nCreate and edit channel groups (for easier browsing and management)\\n\\nBrowse video feeds generated from your channel groups\\n\\nView and search your watch history\\n\\nSearch and watch playlists (these are remote playlists, which means they're fetched from the service you're browsing)Create and edit local playlists (these are created and saved within the app, and have nothing to do with any service)Download videos/audios/subtitles (closed captions)\\n\\n\\n\\nOpen in Kodi\\n\\nWatch/Block age-restricted material.\\n\\n",
+            "app_cate": "Internet,Multimedia"
+        },
+        "eval": {
+            "judge_method": "rule",
+            "observation": "reproduce/newpipe_2/3.png",
+            "action_type": "click",
+            "bbox": [
+                [
+                    666,
+                    1104
+                ],
+                [
+                    1038,
+                    1230
+                ]
+            ],
+            "text": null,
+            "direction": null,
+            "add_info": null
+        }
+    },
+    {
+        "defect_id": "newpipe_3",
+        "app_name": "newpipe",
+        "defect_cate": "UI",
+        "defect_type": "Operation No Response",
+        "defect_desc": "The \"close\" button is not working.",
+        "instructions": {
+            "defects_oriented": [
+                "Open Drawer, go to Settings, use Search to look for App Language, then clear the search query.",
+                "Access Settings from the drawer, input 'App Language' into the search field, and select Clear to reset it."
+            ],
+            "exploration_oriented": [
+                "Navigate to the app settings, search for 'APP language', and then attempt to clear the search query.",
+                "Search for 'Download' within the Settings page, and then tap the clear icon just to verify if the button works to wipe the text field.",
+                "Access the Settings and find 'notification' via search, but I changed my mind, so use the clear button to reset the search bar.",
+                "In the Settings menu, look up 'player' and then tap the clear button to remove the search text.",
+                "Open Settings and search for 'background' to enable background playback, but then clear the search to check other options first."
+            ]
+        },
+        "defect_info": {
+            "github_link": "https://github.com/TeamNewPipe/NewPipe",
+            "reproduce_step": 3
+        },
+        "app_info": {
+            "apk_name": "NewPipe",
+            "apk_version": "NewPipe_v0.27.2.apk",
+            "activity": "org.schabi.newpipe.debug/org.schabi.newpipe.MainActivity",
+            "app_desc": "NewPipe - Lightweight YouTube frontend\\n\\nNewPipe works by fetching the required data from the official API (e.g. PeerTube) of the service you're using. If the official API is restricted (e.g. YouTube) for our purposes, or is proprietary, the app parses the website or uses an internal API instead. This means that you don't need an account on any service to use NewPipe.Also, since they are free and open source software, neither the app nor the Extractor use any proprietary libraries or frameworks, such as Google Play Services. This means you can use NewPipe on devices or custom ROMs that do not have Google apps installed\\n\\nFeatures\\n\\nWatch videos at resolutions up to 4K\\n\\nListen to audio in the background, only loading the audio stream to save data\\n\\nPopup mode (floating player, aka Picture-in-Picture)\\n\\nWatch live streams\\n\\nShow/hide subtitles/closed captions\\n\\nSearch videos and audios (on YouTube, you can specify the content language as well)\\n\\nEnqueue videos (and optionally save them as local playlists)\\n\\nShow/hide general information about videos (such as description and tags)\\n\\nShow/hide next/related videos\\n\\nShow/hide comments\\n\\nSearch videos, audios, channels, playlists and albums\\n\\nBrowse videos and audios within a channel\\n\\nSubscribe to channels (yes, without logging into any account!)\\n\\nGet notifications about new videos from channels you're subscribed to\\n\\nCreate and edit channel groups (for easier browsing and management)\\n\\nBrowse video feeds generated from your channel groups\\n\\nView and search your watch history\\n\\nSearch and watch playlists (these are remote playlists, which means they're fetched from the service you're browsing)Create and edit local playlists (these are created and saved within the app, and have nothing to do with any service)Download videos/audios/subtitles (closed captions)\\n\\n\\n\\nOpen in Kodi\\n\\nWatch/Block age-restricted material.\\n\\n",
+            "app_cate": "Internet,Multimedia"
+        },
+        "eval": {
+            "judge_method": "llm",
+            "observation": "reproduce/newpipe_3/5.png",
+            "action_type": "click",
+            "bbox": [
+                [
+                    954,
+                    138
+                ],
+                [
+                    1080,
+                    264
+                ]
+            ],
+            "text": null,
+            "direction": null,
+            "add_info": "**Defect Description**: Clicking the 'Clear' button on the right side of the search box has no response; the entered content cannot be deleted.\\n\\n**Preconditions**:\\n1. Enter the Settings page.\\n2. Click the search box within Settings (not the main interface search box).\\n3. Text has been entered in the search box (e.g., \"App language\").\\n\\n**Trigger Action**: Clicking the 'Clear' button on the right side of the search box.\\n\\n**Expected Behavior**: The content in the search box is cleared.\\n\\n**Actual Behavior**: The content in the search box remains.\\n\\n**Conclusion**:GUI_BUG: The search box clearing function in Settings is faulty, belonging to Operation No Response."
+        }
+    },
+    {
+        "defect_id": "tasks_1",
+        "app_name": "tasks",
+        "defect_cate": "UI",
+        "defect_type": "Unexpected Task Result",
+        "defect_desc": "The 'clear completed' button is not working.",
+        "instructions": {
+            "defects_oriented": [
+                "Open More Options, then select Clear Completed to remove all finished tasks from the list."
+            ],
+            "exploration_oriented": [
+                "Mark the task as complete, then open More Options and select Clear Completed to remove finished tasks from the list.",
+                "I've already learnt a new dish, please marked this task as done and clear all completed tasks.",
+                "Create a new task named 'Keep smile' and clear all completed tasks.",
+                "Swipe down and find 'Contact supplier', mark it as incomplete, go back and clear the completed content.",
+                "Tap the checkbox to the left of the first incomplete task to mark it as complete, then open More Options and select Clear Completed to remove finished tasks from the list."
+            ]
+        },
+        "defect_info": {
+            "github_link": "https://github.com/tasks/tasks",
+            "reproduce_step": 2
+        },
+        "app_info": {
+            "apk_name": "Task",
+            "apk_version": "org.tasks_130907-release-02.apk",
+            "activity": "org.tasks/com.todoroo.astrid.activity.MainActivity",
+            "app_desc": "Tasks is libre open-source software, based on the original source code from the popular Astrid Tasks & To Do List!\\n\\nTasks can be used entirely offline, or synchronized with Google Tasks, CalDAV, or EteSync. It is your data, you should get to choose where it is stored!\\n\\n* Nested subtasks with unlimited depth\\n* Powerful repeating task options\\n* End-to-end encryption with EteSync\\n* List sharing available when synchronized with CalDAV or EteSync\\n* Location-based arrival and departure notifications\\n* Tag, filter, and search your tasks\\n* Drag and drop manual sorting for Google Tasks\\n* Customize your lists with different icons and colors\\n* Hide tasks until a later date\\n* Automatically add tasks to your calendar\\n* Create new tasks and list reminders with Tasker\\n* And much more!\\n\\nTasks respects your privacy!\\n  - No advertisements\\n  - No ad or location tracking\\n  - Opt-out of crash reporting and anonymous statistics\\n  - Developer has no access to your data under any circumstances\\n\\nIn order to support development some features require a subscription\\n  - 7-day free trial\\n  - Choose your subscription price, starting at $1 per year\\n\\nDocumentation available at https://tasks.org\\nSource code available at https://github.com/tasks\\nContact support@tasks.org for help",
+            "app_cate": "Writing"
+        },
+        "eval": {
+            "judge_method": "rule",
+            "observation": "reproduce/tasks_1/2.png",
+            "action_type": "click",
+            "bbox": [
+                [
+                    541,
+                    1424
+                ],
+                [
+                    1070,
+                    1550
+                ]
+            ],
+            "text": null,
+            "direction": null,
+            "add_info": null
+        }
+    },
+    {
+        "defect_id": "broccoli_1",
+        "app_name": "broccoli",
+        "defect_cate": "UI",
+        "defect_type": "Operation No Response",
+        "defect_desc": "The 'demo recipe' button is not working.",
+        "instructions": {
+            "defects_oriented": [
+                "Open the navigation drawer, select About The App, then click the demo recipe link for hummus.",
+                "Open the navigation drawer, go to About The App, then tap the demo recipe."
+            ],
+            "exploration_oriented": [
+                "Check what version of the app I'm using and try the demo recipe to see how the app works.",
+                "Go to About and open the demo recipe link to see an example of how recipes should look.",
+                "Open the About page and click the demo recipe to learn how to add recipes from the web.",
+                "Navigate to the About section and view the demo hummus recipe to understand the recipe format.",
+                "Check the app info and try the demo recipe link to see if I can import recipes from URLs."
+            ]
+        },
+        "defect_info": {
+            "github_link": "https://github.com/flauschtrud/broccoli",
+            "reproduce_step": 3
+        },
+        "app_info": {
+            "apk_name": "Broccoli",
+            "apk_version": "broccoli-release-01.apk",
+            "activity": "com.flauschcode.broccoli/.MainActivity",
+            "app_desc": "Broccoli is a free eco-friendly recipe app for building your <b>recipe collection</b>, <b>distraction free cooking</b> and <b>seasonal ingredients</b>. Create, collect and cook!\\n\\n<b>Organize easily</b>\\n• create an unlimited amount of recipes\\n• import recipes from your favorite blogs\\n• organize with categories and hashtags\\n• access your recipes offline\\n• backup your recipes\\n\\n<b>Cook eco-friendly</b>\\n• learn more about the seasonal ingredients in your region with the seasonal calendar\\n• search for seasonal recipes in your collection\\n• easily identify seasonal ingredients\\n\\n<b>Cook without distraction</b>\\n• use the fullscreen cooking assistant while you prepare your dish\\n• adjust the amount of the ingredients\\n\\nBroccoli is free for everyone and no account is required. If you enjoy our recipe app you can donate to support the development of the app.\\n\\nStart your recipe collection now!",
+            "app_cate": "Sports,Health"
+        },
+        "eval": {
+            "judge_method": "rule",
+            "observation": "reproduce/broccoli_1/3.png",
+            "action_type": "click",
+            "bbox": [
+                [
+                    0,
+                    602
+                ],
+                [
+                    1080,
+                    837
+                ]
+            ],
+            "text": null,
+            "direction": null,
+            "add_info": null
+        }
+    },
+    {
+        "defect_id": "newpipe_4",
+        "app_name": "newpipe",
+        "defect_cate": "UI",
+        "defect_type": "Navigation Logic Error",
+        "defect_desc": "Click 'Bookmarked Playlists' but navigate to the 'Subscriptions' page.",
+        "instructions": {
+            "defects_oriented": [
+                "Open the drawer, then select Bookmarked Playlists to view your saved playlists."
+            ],
+            "exploration_oriented": [
+                "Show me my bookmarked playlists.",
+                "Open my bookmarked playlists to see what I've saved.",
+                "Go to bookmarked playlists to check my saved content.",
+                "Navigate to the bookmarked playlists section from the menu.",
+                "Access my bookmarked playlists to review my saved videos.",
+                "Check my bookmarked playlists from the menu and sort them by name or by date added."
+            ]
+        },
+        "defect_info": {
+            "github_link": "https://github.com/TeamNewPipe/NewPipe",
+            "reproduce_step": 2
+        },
+        "app_info": {
+            "apk_name": "NewPipe",
+            "apk_version": "NewPipe_v0.27.2.apk",
+            "activity": "org.schabi.newpipe.debug/org.schabi.newpipe.MainActivity",
+            "app_desc": "NewPipe - Lightweight YouTube frontend\\n\\nNewPipe works by fetching the required data from the official API (e.g. PeerTube) of the service you're using. If the official API is restricted (e.g. YouTube) for our purposes, or is proprietary, the app parses the website or uses an internal API instead. This means that you don't need an account on any service to use NewPipe.Also, since they are free and open source software, neither the app nor the Extractor use any proprietary libraries or frameworks, such as Google Play Services. This means you can use NewPipe on devices or custom ROMs that do not have Google apps installed\\n\\nFeatures\\n\\nWatch videos at resolutions up to 4K\\n\\nListen to audio in the background, only loading the audio stream to save data\\n\\nPopup mode (floating player, aka Picture-in-Picture)\\n\\nWatch live streams\\n\\nShow/hide subtitles/closed captions\\n\\nSearch videos and audios (on YouTube, you can specify the content language as well)\\n\\nEnqueue videos (and optionally save them as local playlists)\\n\\nShow/hide general information about videos (such as description and tags)\\n\\nShow/hide next/related videos\\n\\nShow/hide comments\\n\\nSearch videos, audios, channels, playlists and albums\\n\\nBrowse videos and audios within a channel\\n\\nSubscribe to channels (yes, without logging into any account!)\\n\\nGet notifications about new videos from channels you're subscribed to\\n\\nCreate and edit channel groups (for easier browsing and management)\\n\\nBrowse video feeds generated from your channel groups\\n\\nView and search your watch history\\n\\nSearch and watch playlists (these are remote playlists, which means they're fetched from the service you're browsing)Create and edit local playlists (these are created and saved within the app, and have nothing to do with any service)Download videos/audios/subtitles (closed captions)\\n\\n\\n\\nOpen in Kodi\\n\\nWatch/Block age-restricted material.\\n\\n",
+            "app_cate": "Internet,Multimedia"
+        },
+        "eval": {
+            "judge_method": "rule",
+            "observation": "reproduce/newpipe_4/1.png",
+            "action_type": "click",
+            "bbox": [
+                [
+                    0,
+                    884
+                ],
+                [
+                    735,
+                    1010
+                ]
+            ],
+            "text": null,
+            "direction": null,
+            "add_info": null
+        }
+    },
+    {
+        "defect_id": "vibeyou_3",
+        "app_name": "vibeyou",
+        "defect_cate": "UI",
+        "defect_type": "Navigation Logic Error",
+        "defect_desc": "Click the 'Pipe Music' but jump to 'Setting'.",
+        "instructions": {
+            "defects_oriented": [
+                "Open the navigation drawer, then select Piped Music to browse and play streamed songs and playlists."
+            ],
+            "exploration_oriented": [
+                "Go to the Piped Music section so I can browse the available streaming tracks.",
+                "Go to the Piped Music section and search for a specific artist or track.",
+                "Go to the Piped Music section and change the sorting option to reorder the tracks."
+            ]
+        },
+        "defect_info": {
+            "github_link": "https://github.com/you-apps/VibeYou",
+            "reproduce_step": 2
+        },
+        "app_info": {
+            "apk_name": "VibeYou",
+            "apk_version": "VibeYou-debug-03.apk",
+            "activity": "app.suhasdissa.vibeyou.debug/app.suhasdissa.vibeyou.MainActivity",
+            "app_desc": "Vibe You is a music app that lets you play music from your device storage or from Piped Music.\\nIt has a Material You dynamic theme with dark mode support, offline cached playback, shuffle, queue, and more.\\n\\nWith the added benefit of playing region blocked music, This app also has advanced queue management and offline caching for songs to play them later without data consumption.\\n",
+            "app_cate": "Internet,Multimedia"
+        },
+        "eval": {
+            "judge_method": "rule",
+            "observation": "reproduce/vibeyou_3/2.png",
+            "action_type": "click",
+            "bbox": [
+                [
+                    0,
+                    811
+                ],
+                [
+                    656,
+                    958
+                ]
+            ],
+            "text": null,
+            "direction": null,
+            "add_info": null
+        }
+    },
+    {
+        "defect_id": "vibeyou_1",
+        "app_name": "vibeyou",
+        "defect_cate": "UI",
+        "defect_type": "Navigation Logic Error",
+        "defect_desc": "Click the 'Backup' but jump to 'Networking'",
+        "instructions": {
+            "defects_oriented": [
+                "Open the navigation drawer, go to Settings, then select Backup And Restore to back up or restore your song list."
+            ],
+            "exploration_oriented": [
+                "Go to the settings page and cancel the backup or restore process I started by accident.",
+                "Go to the settings page and check whether the latest backup or restore of my song list was successful.",
+                "Go to the settings page, back up or restore my song list, then return to the main settings screen."
+            ]
+        },
+        "defect_info": {
+            "github_link": "https://github.com/you-apps/VibeYou",
+            "reproduce_step": 3
+        },
+        "app_info": {
+            "apk_name": "VibeYou",
+            "apk_version": "VibeYou-debug-03.apk",
+            "activity": "app.suhasdissa.vibeyou.debug/app.suhasdissa.vibeyou.MainActivity",
+            "app_desc": "Vibe You is a music app that lets you play music from your device storage or from Piped Music.\\nIt has a Material You dynamic theme with dark mode support, offline cached playback, shuffle, queue, and more.\\n\\nWith the added benefit of playing region blocked music, This app also has advanced queue management and offline caching for songs to play them later without data consumption.\\n",
+            "app_cate": "Internet,Multimedia"
+        },
+        "eval": {
+            "judge_method": "rule",
+            "observation": "reproduce/vibeyou_1/3.png",
+            "action_type": "click",
+            "bbox": [
+                [
+                    0,
+                    527
+                ],
+                [
+                    1080,
+                    718
+                ]
+            ],
+            "text": null,
+            "direction": null,
+            "add_info": null
+        }
+    },
+    {
+        "defect_id": "vibeyou_2",
+        "app_name": "vibeyou",
+        "defect_cate": "UI",
+        "defect_type": "Navigation Logic Error",
+        "defect_desc": "Click the 'Networking' but jump to 'Backup'",
+        "instructions": {
+            "defects_oriented": [
+                "Open the navigation drawer, go to Settings, then select Network Settings to change the server and resolve playback issues."
+            ],
+            "exploration_oriented": [
+                "Go to the app's settings, update the server configuration, save it, and return to the main settings screen.",
+                "Go to the settings page and test the connection to the new music server to ensure playback works.",
+                "Go to the app's settings, switch to a different server, and verify the connection status."
+            ]
+        },
+        "defect_info": {
+            "github_link": "https://github.com/you-apps/VibeYou",
+            "reproduce_step": 3
+        },
+        "app_info": {
+            "apk_name": "VibeYou",
+            "apk_version": "VibeYou-debug-03.apk",
+            "activity": "app.suhasdissa.vibeyou.debug/app.suhasdissa.vibeyou.MainActivity",
+            "app_desc": "Vibe You is a music app that lets you play music from your device storage or from Piped Music.\\nIt has a Material You dynamic theme with dark mode support, offline cached playback, shuffle, queue, and more.\\n\\nWith the added benefit of playing region blocked music, This app also has advanced queue management and offline caching for songs to play them later without data consumption.\\n",
+            "app_cate": "Internet,Multimedia"
+        },
+        "eval": {
+            "judge_method": "rule",
+            "observation": "reproduce/vibeyou_2/3.png",
+            "action_type": "click",
+            "bbox": [
+                [
+                    0,
+                    739
+                ],
+                [
+                    1080,
+                    930
+                ]
+            ],
+            "text": null,
+            "direction": null,
+            "add_info": null
+        }
+    },
+    {
+        "defect_id": "opentracks-03_1",
+        "app_name": "opentracks-03",
+        "defect_cate": "UI",
+        "defect_type": "Navigation Logic Error",
+        "defect_desc": "Click the 'Default Units and Activity Setting' but jump to 'UI interface'",
+        "instructions": {
+            "defects_oriented": [
+                "Open Settings, then select Default Units and Activity to adjust your measurement units, default activity type, and track name."
+            ],
+            "exploration_oriented": [
+                "Go to the settings page and set the preferred units to metric for future activities.",
+                "Go to the settings page and set hiking as the default activity for new recordings.",
+                "Go to the settings page and update the track default name so it includes the date and activity type.",
+                "Go to the settings and set the default track name to 'My Adventure'.",
+                "Go to the settings, review my preferred units and activity, then save the changes and return to the main tracking screen."
+            ]
+        },
+        "defect_info": {
+            "github_link": "https://github.com/you-apps/VibeYou",
+            "reproduce_step": 2
+        },
+        "app_info": {
+            "apk_name": "OpenTracks",
+            "apk_version": "OpenTracks-release-03.apk",
+            "activity": "de.dennisguse.opentracks/.introduction.IntroductionActivity",
+            "app_desc": "A sport tracking buddy that respects your privacy.\\n\\nSport and outdoor activities grants happiness, skill and confidence.\\n\\nValue your health by keeping track on your training.\\nRecords as you go running or walking, and gives you a bike computer with a bigger screen for cycling.\\nMark interesting locations along your way with pictures.\\nKeep recorded statistics in great detail for analysis.\\nShare only the data you want others to have.\\n\\n* Voice announcements.\\n* Supports Bluetooth LE sensors: heart rate, speed and distance (cycling), cadence (cycling), and power meter (cycling).\\n* Altitude gain and loss: via barometric sensor.\\n* Altitude shown in EGM2008 (above mean sea level); exported as WGS84.\\n* Export data as tracks either as KMZ (incl. photos), KML, or GPX.\\n* No Internet access or extra permissions.\\n* Dark and light theme, respecting system settings.\\n* No ads.\\n\\nLibre software / Free Software / Open Source\\nmeaning you can use, study, change and share the source code.\\nLicensed Apache 2.0\\n",
+            "app_cate": "Sports,Health"
+        },
+        "eval": {
+            "judge_method": "rule",
+            "observation": "reproduce/opentracks-03_1/2.png",
+            "action_type": "click",
+            "bbox": [
+                [
+                    0,
+                    296
+                ],
+                [
+                    1080,
+                    541
+                ]
+            ],
+            "text": null,
+            "direction": null,
+            "add_info": null
+        }
+    },
+    {
+        "defect_id": "opentracks-03_2",
+        "app_name": "opentracks-03",
+        "defect_cate": "UI",
+        "defect_type": "Navigation Logic Error",
+        "defect_desc": "Click the 'UI interface' but jump to 'Default Units and Activity Setting'",
+        "instructions": {
+            "defects_oriented": [
+                "Open Settings, then go to User Interface and Appearance to adjust the recording layout and theme."
+            ],
+            "exploration_oriented": [
+                "Open Settings, then go to User Interface / Appearance, Recording Layout, Theme to adjust the recording display and appearance.",
+                "Go to the settings and switch the app's appearance to the dark theme.",
+                "Go to the settings and change the recording layout to show large metrics for better visibility during activities.",
+                "Go to the settings and turn on high-contrast mode for better visibility outdoors.",
+                "Go to the appearance settings to adjust the theme, then return to the main settings page."
+            ]
+        },
+        "defect_info": {
+            "github_link": "https://github.com/you-apps/VibeYou",
+            "reproduce_step": 2
+        },
+        "app_info": {
+            "apk_name": "OpenTracks",
+            "apk_version": "OpenTracks-release-03.apk",
+            "activity": "de.dennisguse.opentracks/.introduction.IntroductionActivity",
+            "app_desc": "A sport tracking buddy that respects your privacy.\\n\\nSport and outdoor activities grants happiness, skill and confidence.\\n\\nValue your health by keeping track on your training.\\nRecords as you go running or walking, and gives you a bike computer with a bigger screen for cycling.\\nMark interesting locations along your way with pictures.\\nKeep recorded statistics in great detail for analysis.\\nShare only the data you want others to have.\\n\\n* Voice announcements.\\n* Supports Bluetooth LE sensors: heart rate, speed and distance (cycling), cadence (cycling), and power meter (cycling).\\n* Altitude gain and loss: via barometric sensor.\\n* Altitude shown in EGM2008 (above mean sea level); exported as WGS84.\\n* Export data as tracks either as KMZ (incl. photos), KML, or GPX.\\n* No Internet access or extra permissions.\\n* Dark and light theme, respecting system settings.\\n* No ads.\\n\\nLibre software / Free Software / Open Source\\nmeaning you can use, study, change and share the source code.\\nLicensed Apache 2.0\\n",
+            "app_cate": "Sports,Health"
+        },
+        "eval": {
+            "judge_method": "rule",
+            "observation": "reproduce/opentracks-03_2/2.png",
+            "action_type": "click",
+            "bbox": [
+                [
+                    0,
+                    541
+                ],
+                [
+                    1080,
+                    733
+                ]
+            ],
+            "text": null,
+            "direction": null,
+            "add_info": null
+        }
+    },
+    {
+        "defect_id": "tasks_2",
+        "app_name": "tasks",
+        "defect_cate": "UI",
+        "defect_type": "Operation No Response",
+        "defect_desc": "The Search function is not working.",
+        "instructions": {
+            "defects_oriented": [
+                "Click Search, type 'Pay Bills', then enter the desired control in the task list.",
+                "Click Search, type 'Pay Bills', then press Enter to start the search."
+            ],
+            "exploration_oriented": [
+                "Search for 'Contact supplier' and marked it as incomplete.",
+                "Search for 'Plan travel route' and delete this task.",
+                "Search for 'Backup computer files' and change the date to Today.",
+                "Search for 'Pay bills' and then open the Update resume task to view or edit its details.",
+                "Find the 'Update resume' task and open it to view or edit its details.",
+                "Search for the 'Pay bills' list and mark the Learn to cook new dish task as complete.",
+                "Search for the 'Take dog to vet' task and open it to view or add details."
+            ]
+        },
+        "defect_info": {
+            "github_link": "https://github.com/tasks/tasks",
+            "reproduce_step": 2
+        },
+        "app_info": {
+            "apk_name": "Task",
+            "apk_version": "org.tasks_130907-release-02.apk",
+            "activity": "org.tasks/com.todoroo.astrid.activity.MainActivity",
+            "app_desc": "Tasks is libre open-source software, based on the original source code from the popular Astrid Tasks & To Do List!\\n\\nTasks can be used entirely offline, or synchronized with Google Tasks, CalDAV, or EteSync. It is your data, you should get to choose where it is stored!\\n\\n* Nested subtasks with unlimited depth\\n* Powerful repeating task options\\n* End-to-end encryption with EteSync\\n* List sharing available when synchronized with CalDAV or EteSync\\n* Location-based arrival and departure notifications\\n* Tag, filter, and search your tasks\\n* Drag and drop manual sorting for Google Tasks\\n* Customize your lists with different icons and colors\\n* Hide tasks until a later date\\n* Automatically add tasks to your calendar\\n* Create new tasks and list reminders with Tasker\\n* And much more!\\n\\nTasks respects your privacy!\\n  - No advertisements\\n  - No ad or location tracking\\n  - Opt-out of crash reporting and anonymous statistics\\n  - Developer has no access to your data under any circumstances\\n\\nIn order to support development some features require a subscription\\n  - 7-day free trial\\n  - Choose your subscription price, starting at $1 per year\\n\\nDocumentation available at https://tasks.org\\nSource code available at https://github.com/tasks\\nContact support@tasks.org for help",
+            "app_cate": "Writing"
+        },
+        "eval": {
+            "judge_method": "llm",
+            "observation": "reproduce/tasks_2/3.png",
+            "action_type": "click",
+            "bbox": [
+                [
+                    920,
+                    2123
+                ],
+                [
+                    1070,
+                    2242
+                ]
+            ],
+            "text": null,
+            "direction": null,
+            "add_info": "**Defect Description**: Clicking the 'search' icon in the virtual keyboard results in no response; the entered content cannot be searched.\\n\\n**Preconditions**:\\n1. Clicking the search box on the main interface.\\n2. Text has been entered in the search box (e.g., \"Pay Bills\").\\n\\n**Trigger Action**: Clicking the 'search' icon in the virtual keyboard.\\n\\n**Expected Behavior**: The interface should redirect accordingly based on the search results.\\n\\n**Actual Behavior**: The interface remains unchanged.\\n\\n**Conclusion**: GUI_BUG: Virtual keyboard search function malfunction, belonging to Operation No Response."
+        }
+    },
+    {
+        "defect_id": "broccoli_2",
+        "app_name": "broccoli",
+        "defect_cate": "UI",
+        "defect_type": "Unexpected Task Result",
+        "defect_desc": "The recipe could not be deleted.",
+        "instructions": {
+            "defects_oriented": [
+                "Open the Classic Scrambled Eggs with Tomato recipe, then select More Options and choose Delete."
+            ],
+            "exploration_oriented": [
+                "Delete the Black Sesame Soup recipe from my collection.",
+                "I made a mistake adding Classic Scrambled Eggs with Tomato, please delete it.",
+                "Delete the Garlic Bok Choy recipe to free up space in my recipe list.",
+                "Remove Green Pepper and Pork Stir-fry from my saved recipes.",
+                "I don't need the Grilled Salmon with Asparagus recipe, delete it please.",
+                "The Egg Tarts recipe is a duplicate, remove it from my recipes."
+            ]
+        },
+        "defect_info": {
+            "github_link": "https://github.com/flauschtrud/broccoli",
+            "reproduce_step": 3
+        },
+        "app_info": {
+            "apk_name": "Broccoli",
+            "apk_version": "broccoli-release-01.apk",
+            "activity": "com.flauschcode.broccoli/.MainActivity",
+            "app_desc": "Broccoli is a free eco-friendly recipe app for building your <b>recipe collection</b>, <b>distraction free cooking</b> and <b>seasonal ingredients</b>. Create, collect and cook!\\n\\n<b>Organize easily</b>\\n• create an unlimited amount of recipes\\n• import recipes from your favorite blogs\\n• organize with categories and hashtags\\n• access your recipes offline\\n• backup your recipes\\n\\n<b>Cook eco-friendly</b>\\n• learn more about the seasonal ingredients in your region with the seasonal calendar\\n• search for seasonal recipes in your collection\\n• easily identify seasonal ingredients\\n\\n<b>Cook without distraction</b>\\n• use the fullscreen cooking assistant while you prepare your dish\\n• adjust the amount of the ingredients\\n\\nBroccoli is free for everyone and no account is required. If you enjoy our recipe app you can donate to support the development of the app.\\n\\nStart your recipe collection now!",
+            "app_cate": "Sports,Health"
+        },
+        "eval": {
+            "judge_method": "rule",
+            "observation": "reproduce/broccoli_2/3.png",
+            "action_type": "click",
+            "bbox": [
+                [
+                    555,
+                    538
+                ],
+                [
+                    1070,
+                    664
+                ]
+            ],
+            "text": null,
+            "direction": null,
+            "add_info": null
+        }
+    },
+    {
+        "defect_id": "vibeyou_4",
+        "app_name": "vibeyou",
+        "defect_cate": "UI",
+        "defect_type": "Unexpected Task Result",
+        "defect_desc": "Theme change not working when clicking the \"Dark\"",
+        "instructions": {
+            "defects_oriented": [
+                "Open the navigation drawer, go to Settings, select Appearance Settings, then choose Dark to switch to dark mode."
+            ],
+            "exploration_oriented": [
+                "Go to the appearance settings and switch the app to dark mode.",
+                "Switch the app to the dark theme in appearance settings and go back to the main screen to confirm it’s applied."
+            ]
+        },
+        "defect_info": {
+            "github_link": "https://github.com/you-apps/VibeYou",
+            "reproduce_step": 4
+        },
+        "app_info": {
+            "apk_name": "VibeYou",
+            "apk_version": "VibeYou-debug-03.apk",
+            "activity": "app.suhasdissa.vibeyou.debug/app.suhasdissa.vibeyou.MainActivity",
+            "app_desc": "Vibe You is a music app that lets you play music from your device storage or from Piped Music.\\nIt has a Material You dynamic theme with dark mode support, offline cached playback, shuffle, queue, and more.\\n\\nWith the added benefit of playing region blocked music, This app also has advanced queue management and offline caching for songs to play them later without data consumption.\\n",
+            "app_cate": "Internet,Multimedia"
+        },
+        "eval": {
+            "judge_method": "rule",
+            "observation": "reproduce/vibeyou_4/5.png",
+            "action_type": "click",
+            "bbox": [
+                [
+                    486,
+                    633
+                ],
+                [
+                    687,
+                    759
+                ]
+            ],
+            "text": null,
+            "direction": null,
+            "add_info": null
+        }
+    },
+    {
+        "defect_id": "faketraveler",
+        "app_name": "faketraveler",
+        "defect_cate": "UI",
+        "defect_type": "Unexpected Task Result",
+        "defect_desc": "The GPS location alaways at Beijing.",
+        "instructions": {
+            "defects_oriented": [
+                "Search for Ningbo",
+                "Search for 'Shanghai, Xuhui Area'"
+            ],
+            "exploration_oriented": [
+                "Change my GPS location to New York so I can access region-locked content.",
+                "Search for Tokyo and apply it as my location.",
+                "I want to appear as if I'm in London, set my location there.",
+                "Set the mock location to Shanghai to test a local service."
+            ]
+        },
+        "defect_info": {
+            "github_link": "https://github.com/mcastillof/FakeTraveler",
+            "reproduce_step": 2
+        },
+        "app_info": {
+            "apk_name": "FakeTraveler",
+            "apk_version": "FakeTraveler-debug-02.apk",
+            "activity": "org.schabi.newpipe.debug/org.schabi.newpipe.MainActivity",
+            "app_desc": "Sometimes you need to fake the location of your device (for privacy or to test an app). <i>Fake Traveler</i> provides you a map to select the location where you want your phone to be. Long press in the map and tap Apply button. In \\\"...\\\" button there are two options to keep mocking the location over time. No root needed as it uses a developers option to mock the location in your device.\\n\\n<b>Requirements:</b> In order to work, you need to allow Fake Traveler to mock locations. You have to <a href=\\\"https://developer.android.com/studio/debug/dev-options?hl=en-419\\\">enable Developer options</a> and select this app in <b>Settings/System/Developer options/Select mock location app</b> option.\\n",
+            "app_cate": "Development,Navigation"
+        },
+        "eval": {
+            "judge_method": "llm",
+            "observation": "reproduce/faketraveler/3.png",
+            "action_type": "click",
+            "bbox": [
+                [
+                    920,
+                    2115
+                ],
+                [
+                    1070,
+                    2243
+                ]
+            ],
+            "text": null,
+            "direction": null,
+            "add_info": "**Defect Description**: Clicking the 'goto' icon in the virtual keyboard results in no response and fails to navigate to the entered location.\\n\\n**Preconditions**:\\n1. Clicking the map's search box (not the latitude/longitude box).\\n2. Text has been entered in the search box (e.g., \"Ningbo\").\\n\\n**Trigger Action**: Clicking the \"goto\" button on the virtual keyboard.\\n\\n**Expected Behavior**: The map interface should navigate to the expected location (e.g., \"Ningbo\").\\n\\n**Actual Behavior**: The map interface remains stuck on \"Beijing\".\\n\\n**Conclusion**: GUI Defect: The virtual keyboard's navigation function is faulty, belonging to the \"Operation No Response\" category."
+        }
+    },
+    {
+        "defect_id": "ankidroid-2_8_2",
+        "app_name": "ankidroid-2_8_2",
+        "defect_cate": "UX",
+        "defect_type": "Navigation Logic Error",
+        "defect_desc": "The back button navigates to the wrong screen (DeckPicker instead of main settings).",
+        "instructions": {
+            "defects_oriented": [
+                "Go to Settings, check the Language option in AnkiDroid settings, then go back and change the theme in Appearance settings."
+            ],
+            "exploration_oriented": [
+                "Open Settings, enable Vibrate notifications in AnkiDroid general settings, then return to Settings and check the Gestures options.",
+                "In Settings, review the sync options under AnkiDroid, then navigate back and adjust the font size in Appearance.",
+                "Go to AnkiDroid settings to check my account status, then return to the Settings menu and explore the Reviewing options.",
+                "Open the Advanced settings to check experimental features, then go back to Settings and enable Night mode in Appearance.",
+                "Check the error reporting mode in AnkiDroid settings, then return to the previous menu and configure Gestures."
+            ]
+        },
+        "defect_info": {
+            "github_link": "https://github.com/ankidroid/Anki-Android/issues/4935",
+            "reproduce_step": 3
+        },
+        "app_info": {
+            "apk_name": "AnkiDroid",
+            "apk_version": "AnkiDroid-2.8.2.apk",
+            "activity": "com.ichi2.anki/.IntentHandler",
+            "app_desc": "Anki is spaced repetition technique which is simple but highly effective. It helps you memorize things by automatically repeating them across increasing intervals based on your responses with no need for you to keep track of what to study or when to study it. You create notes (or download shared decks) with content you need to memorize, and the scheduler will make sure you see the content when you need to.\\n\\nAnkiDroid is intended to be used in conjunction with Anki on your computer. While it is possible to function without it, some tasks are either only possible with, or a lot more efficient with Anki Desktop. Furthermore, it is strongly recommended to at least read \"Key Concepts\" section of the main Anki manual to understand the terminology used here.\\n\\nIf this manual doesn’t contain what you are looking for, please check the AnkiDroid Wiki for a list of changes, instructions for submitting bug reports and feature requests, a list of frequently asked questions, and much more.\\n",
+            "app_cate": "Writing"
+        },
+        "eval": {
+            "judge_method": "llm",
+            "observation": "reproduce/ankidroid-2_8_2/4.png",
+            "action_type": "click",
+            "bbox": [
+                [
+                    0,
+                    128
+                ],
+                [
+                    147,
+                    275
+                ]
+            ],
+            "text": null,
+            "direction": null,
+            "add_info": "**Defect Description**: UX Defect: Clicking \"navigate up\" on a second-level subpage of \"Settings\" will directly return to the main interface, instead of returning to the first-level subpage of \"Settings\".\\n\\n**Preconditions**:\\n1. Open \"Settings\" (see the first-level pages, including 'AnkiDroid', 'Reviewing', 'Appearance', etc.)\\n2. Select one and enter the second-level \"Settings\" page (e.g., enter 'AnkiDroid').\\n\\n**Trigger Action**: Click \"navigate up\" (small arrow in the upper left corner).\\n\\n**Expected Behavior**: Return to the first-level subpage of \"Settings,\" including 'AnkiDroid', 'Reviewing', 'Appearance', etc.\\n\\n**Actual Behavior**: Directly return to the main interface.\\n\\n**Conclusion**: GUI Defect: The navigate up function is faulty, negatively impacting the user experience. This is a Navigation Logic Error."
+        }
+    },
+    {
+        "defect_id": "ankidroid-2_15",
+        "app_name": "ankidroid-2_15",
+        "defect_cate": "UI",
+        "defect_type": "Operation No Response",
+        "defect_desc": "The app does not allow re-submitting the report after cancellation, which indicates a lack of expected feedback or action following user interaction.",
+        "instructions": {
+            "defects_oriented": [
+                "Open the navigation drawer, go to Help, select Get Help, choose Send Troubleshooting Report, cancel the dialog, then select Send Troubleshooting Report again.",
+                "Open the navigation bar, open Help, select Get Help, choose Send Troubleshooting Report, tap Cancel, then send another troubleshooting report."
+            ],
+            "exploration_oriented": [
+                "Open the Get Help page from the side menu, browse the prompt details in the report bug page, cancel the action, and then open 'Report a bug' again to submit the report.",
+                "Go to Help, start the bug reporting process, cancel the action, and then attempt to click 'Report a bug' a second time.",
+                "Navigate to Help section, select Send troubleshooting report, cancel the submission, then reconsider and try to send the troubleshooting report again."
+            ]
+        },
+        "defect_info": {
+            "github_link": "https://github.com/ankidroid/Anki-Android/issues/8379",
+            "reproduce_step": 6
+        },
+        "app_info": {
+            "apk_name": "AnkiDroid",
+            "apk_version": "AnkiDroid-2.15alpha34-arm64-v8a.apk",
+            "activity": "com.ichi4.anki/.IntentHandler",
+            "app_desc": "Anki is spaced repetition technique which is simple but highly effective. It helps you memorize things by automatically repeating them across increasing intervals based on your responses with no need for you to keep track of what to study or when to study it. You create notes (or download shared decks) with content you need to memorize, and the scheduler will make sure you see the content when you need to.\\n\\nAnkiDroid is intended to be used in conjunction with Anki on your computer. While it is possible to function without it, some tasks are either only possible with, or a lot more efficient with Anki Desktop. Furthermore, it is strongly recommended to at least read \"Key Concepts\" section of the main Anki manual to understand the terminology used here.\\n\\nIf this manual doesn’t contain what you are looking for, please check the AnkiDroid Wiki for a list of changes, instructions for submitting bug reports and feature requests, a list of frequently asked questions, and much more.\\n",
+            "app_cate": "Writing"
+        },
+        "eval": {
+            "judge_method": "llm",
+            "observation": "reproduce/ankidroid-2_15/6.png",
+            "action_type": "click",
+            "bbox": [
+                [
+                    74,
+                    1357
+                ],
+                [
+                    1006,
+                    1525
+                ]
+            ],
+            "text": null,
+            "direction": null,
+            "add_info": "**Defect Description**: When submitting a 'troubshooting report', this app does not support resubmitting the report after cancellation. Reports that were not actually submitted will be displayed as submitted.\\n\\n**Preconditions**:\\n1. Open the menu and select \"Help\".\\n2. Click \"Get Help\".\\n3. Click \"Send troubshooting report\".\\n4. Click \"Cancel\" to cancel submission.\\n\\n**Trigger Action**: Clicking \"Send troubshooting report\" again.\\n\\n**Expected Behavior**: Submit the troubshooting report normally.\\n\\n**Actual Behavior**: The app displays a message: \"Report already submitted\".\\n\\n**Conclusion**: GUI Defect: The troubshooting report function has a illogical logic, belonging to Unexpected Task Result."
+        }
+    },
+    {
+        "defect_id": "ankidroid-2_14",
+        "app_name": "ankidroid-2_14",
+        "defect_cate": "UI",
+        "defect_type": "Operation No Response",
+        "defect_desc": "Cropping the image does not response in a cropped image.",
+        "instructions": {
+            "defects_oriented": [
+                "Tap Add to open the deck, then tap Add again to create a flashcard, attach multimedia to the front field, add an image using the camera, take a photo, tap Done, confirm with Ok, and crop the image.",
+                "Tap the add button at the bottom right to create a new note, attach multimedia to the front, add an image using the camera, capture and confirm the photo, then crop it."
+            ],
+            "exploration_oriented": [
+                "Create a new flashcard, attach an image from the camera, and attempt to crop it.",
+                "Go to the card creator, snap a picture, and select the crop option to resize it.",
+                "Create a new card, tap the attachment paperclip to add an image, then try to crop the image within the editor.",
+                "Create a dummy card, snap a picture through camera, and try to perform a crop action on it."
+            ]
+        },
+        "defect_info": {
+            "github_link": "https://github.com/ankidroid/Anki-Android/issues/7768",
+            "reproduce_step": 8
+        },
+        "app_info": {
+            "apk_name": "AnkiDroid",
+            "apk_version": "AnkiDroid-2.14.0-arm64-v8a.apk",
+            "activity": "com.ichi5.anki/.IntentHandler",
+            "app_desc": "Anki is spaced repetition technique which is simple but highly effective. It helps you memorize things by automatically repeating them across increasing intervals based on your responses with no need for you to keep track of what to study or when to study it. You create notes (or download shared decks) with content you need to memorize, and the scheduler will make sure you see the content when you need to.\\n\\nAnkiDroid is intended to be used in conjunction with Anki on your computer. While it is possible to function without it, some tasks are either only possible with, or a lot more efficient with Anki Desktop. Furthermore, it is strongly recommended to at least read \"Key Concepts\" section of the main Anki manual to understand the terminology used here.\\n\\nIf this manual doesn’t contain what you are looking for, please check the AnkiDroid Wiki for a list of changes, instructions for submitting bug reports and feature requests, a list of frequently asked questions, and much more.\\n",
+            "app_cate": "Writing"
+        },
+        "eval": {
+            "judge_method": "rule",
+            "observation": "reproduce/ankidroid-2_14/8.png",
+            "action_type": "click",
+            "bbox": [
+                [
+                    0,
+                    1529
+                ],
+                [
+                    1080,
+                    1655
+                ]
+            ],
+            "text": null,
+            "direction": null,
+            "add_info": null
+        }
+    },
+    {
+        "defect_id": "amaze-3_4_3",
+        "app_name": "amaze-3_4_3",
+        "defect_cate": "UI",
+        "defect_type": "Unexpected Task Result",
+        "defect_desc": "The navigation behavior is incorrect as attempting to enter a directory from search results opens it as a file instead of navigating into the directory.",
+        "instructions": {
+            "defects_oriented": [
+                "Search for the 'Pictures' and remove the first photo.",
+                "Search for the 'Download' and tell me the first download."
+            ],
+            "exploration_oriented": []
+        },
+        "defect_info": {
+            "github_link": "https://github.com/TeamAmaze/AmazeFileManager/issues/1872",
+            "reproduce_step": 4
+        },
+        "app_info": {
+            "apk_name": "Amaze File Manager",
+            "apk_version": "amaze.file.manager.3.4.3.play.apk",
+            "activity": "com.amaze.filemanager/.activities.MainActivity",
+            "app_desc": "Amaze File Manager is a powerful, free, and open-source Android file management application. It provides basic file operations (such as copy, paste, delete, and rename), advanced features (such as compression, decompression, FTP/SMB/SFTP client, root directory browsing, and file encryption), and a clean and user-friendly interface. It also includes an application manager to view and uninstall applications, and a quick browse box for fast access to frequently used directories.",
+            "app_cate": "Managing"
+        },
+        "eval": {
+            "judge_method": "llm",
+            "observation": "reproduce/amaze-3_4_3/4.png",
+            "action_type": "click",
+            "bbox": [
+                [
+                    0,
+                    594
+                ],
+                [
+                    1075,
+                    780
+                ]
+            ],
+            "text": null,
+            "direction": null,
+            "add_info": "**Defect Description**: The folder found through the search function cannot be opened normally in folder format.\\n\\n**Preconditions**:\\n1. Clicking the search box.\\n2. The target folder name (e.g., 'Pictures') has been entered in the search box.\\n\\n**Trigger Action**: Clicking to enter the target folder (e.g., 'Pictures').\\n\\n**Expected Behavior**: Expand the directory information of the target folder (e.g., directory information related to 'Pictures').\\n\\n**Actual Behavior**: A pop-up window appears, indicating that the folder can only be opened in various file formats.\\n\\n**Conclusion**: GUI Defect: Target folders found via the search function cannot be opened as folders and their directory information cannot be displayed. This is an Unexpected Task Result."
+        }
+    },
+    {
+        "defect_id": "amaze-3_5_3",
+        "app_name": "amaze-3_5_3",
+        "defect_cate": "UX",
+        "defect_type": "Unexpected Task Result",
+        "defect_desc": "The issue describes a scenario where the application treats files with leading or trailing spaces differently.",
+        "instructions": {
+            "defects_oriented": [
+                "Go to the Documents folder, tap the add button, select Folder, enter a name 'newtest   ', then click Create to add the new folder."
+            ],
+            "exploration_oriented": [
+                "Create a directory in Documents folder named ' secret' (with two spaces before secret).",
+                "Create two files in the Documents folder. The first is named with 'testing.log', another file is named with '  report.txt'.",
+                "Create a folder named '  Test' in the Documents folder and inside it create a file named 'notes.txt'.",
+                "Create two files in the Documents folder. The first is named with 'testing  .log', another file is named with '  report.txt'."
+            ]
+        },
+        "defect_info": {
+            "github_link": "https://github.com/TeamAmaze/AmazeFileManager/issues/2595",
+            "reproduce_step": 4
+        },
+        "app_info": {
+            "apk_name": "Amaze File Manager",
+            "apk_version": "AmazeFileManager-v3.5.3.apk",
+            "activity": "com.amaze.filemanager/.activities.MainActivity",
+            "app_desc": "Amaze File Manager is a powerful, free, and open-source Android file management application. It provides basic file operations (such as copy, paste, delete, and rename), advanced features (such as compression, decompression, FTP/SMB/SFTP client, root directory browsing, and file encryption), and a clean and user-friendly interface. It also includes an application manager to view and uninstall applications, and a quick browse box for fast access to frequently used directories.",
+            "app_cate": "Managing"
+        },
+        "eval": {
+            "judge_method": "llm",
+            "observation": "reproduce/amaze-3_5_3/6.png",
+            "action_type": "click",
+            "bbox": [
+                [
+                    777,
+                    926
+                ],
+                [
+                    974,
+                    1052
+                ]
+            ],
+            "text": null,
+            "direction": null,
+            "add_info": "**Defect Description**: Files can still be created even with invalid filenames (leading or trailing spaces).\\n\\n**Preconditions**:\\n1. Click \"Create File/Folder\"\\n2. Enter invalid text in the naming field (spaces at the beginning/end of the name, e.g., \"  newtest\").\\n\\n**Trigger Action**: Clicking 'CREATE' icon.\\n\\n**Expected Behavior**: The app displays a warning: Leading or trailing spaces detected in file or folder names.\\n\\n**Actual Behavior**: File/folder creation successful.\\n\\n**Conclusion**: GUI Defect: The 'CREATE' icon warning function is faulty, belonging to the Unexpected Task Result category."
+        }
+    },
+    {
+        "defect_id": "catima",
+        "app_name": "catima",
+        "defect_cate": "UX",
+        "defect_type": "Navigation Logic Error",
+        "defect_desc": "After clicking back, return main page instead of search result.",
+        "instructions": {
+            "defects_oriented": [
+                "Search for 'Phone' item and select the 'Phone-OnePlus', identify the card IDs number and return to the search list"
+            ],
+            "exploration_oriented": [
+                "Search for 'Phone' item and identify which one has a larger card IDs number.",
+                "Find which fitness center has the earliest expiry date among all gym membership cards.",
+                "Collect the full card ID numbers for all Phone-related stores.",
+                "List the barcode IDs of all Sport-branded reward cards.",
+                "Search for Food cards whose barcode type is CODE_128."
+            ]
+        },
+        "defect_info": {
+            "github_link": "https://github.com/CatimaLoyalty/Android/issues/1962",
+            "reproduce_step": 4
+        },
+        "app_info": {
+            "apk_name": "Catima",
+            "apk_version": "catima-v2_32_1.apk",
+            "activity": "me.hackerchick.catima/protect.card_locker.MainActivity",
+            "app_desc": "Catima is a free, open-source Android app that acts as a digital wallet for storing loyalty cards, membership cards, and tickets. It allows users to replace their physical cards by scanning barcodes into the app, which runs entirely offline to prioritize user privacy and data security. The app can also import data from other card management apps, supports backups, and allows for sharing cards and codes.",
+            "app_cate": "Payment"
+        },
+        "eval": {
+            "judge_method": "llm",
+            "observation": "reproduce/catima/4.png",
+            "action_type": "click",
+            "bbox": [
+                [
+                    0,
+                    138
+                ],
+                [
+                    147,
+                    285
+                ]
+            ],
+            "text": null,
+            "direction": null,
+            "add_info": "**Defect Description**: UX Defect: After completing a search, clicking \"Navigate Up\" does not return to the search directory; instead, it directly returns to the main interface.\\n\\n**Preconditions**:\\n1. Enter a product name in the search box (e.g., search for \"Phone\").\\n2. Clicking \"Search\" and enter the search directory (displaying all matching product information).\\n3. Select a product (e.g., select \"Phone-OnePlus\").\\n\\n**Trigger Action**: Click \"Navigate Up\" (small arrow in the upper left corner).\\n\\n**Expected Behavior**: Return to the search directory for the target product (e.g., \"Phone\" related products).\\n\\n**Actual Behavior**: Return to the main interface displaying all product information.\\n\\n**Conclusion**: GUI Defect: A problem with the \"Navigate Up\" function, negatively impacting the user experience and belonging to a Navigation Logic Error."
+        }
+    },
+    {
+        "defect_id": "androbd",
+        "app_name": "androbd",
+        "defect_cate": "UI",
+        "defect_type": "Operation No Response",
+        "defect_desc": "Clicking the Bitcoin option results in an error message \\\"No activity found to handle intent\\\" instead of opening a Bitcoin donating page, indicating a failure to initiate the intended operation.",
+        "instructions": {
+            "defects_oriented": [
+                "Open More Options, go to Settings, select AndrOBD / V2.0.7, then tap Bitcoin.",
+                "First, open More Options and go to Settings. Next, look for Andr Obd / V2.0.7 and select Bitcoin."
+            ],
+            "exploration_oriented": [
+                "Go to the app's about page and show me the Bitcoin donation details.",
+                "Go to the app's about page to check the Bitcoin support details, then return to the main settings screen.",
+                "Go to the app's about page and open the Bitcoin support section to confirm it loads properly.",
+                "Show me the Bitcoin address so I can copy it for making a support payment.",
+                "Go to the AndrOBD about page and come back after checking the Bitcoin support details."
+            ]
+        },
+        "defect_info": {
+            "github_link": "https://github.com/fr3ts0n/AndrOBD/issues/144",
+            "reproduce_step": 4
+        },
+        "app_info": {
+            "apk_name": "AndrOBD",
+            "apk_version": "com.fr3ts0n.ecu.gui.androbd_20007.apk",
+            "activity": "com.fr3ts0n.ecu.gui.androbd/.MainActivity",
+            "app_desc": "AndrOBD is a free and open-source Android app that connects to a car's on-board diagnostics (OBD) system via an ELM327-compatible adapter to read and clear fault codes, monitor live data, and view vehicle information. It allows users to use their phone or tablet for car diagnostics, offering features like data recording, a dashboard display, and a \"heads-up display\" mode.",
+            "app_cate": "Managing"
+        },
+        "eval": {
+            "judge_method": "rule",
+            "observation": "reproduce/androbd/4.png",
+            "action_type": "click",
+            "bbox": [
+                [
+                    0,
+                    1388
+                ],
+                [
+                    1080,
+                    1529
+                ]
+            ],
+            "text": null,
+            "direction": null,
+            "add_info": null
+        }
+    },
+    {
+        "defect_id": "markor",
+        "app_name": "markor",
+        "defect_cate": "UX",
+        "defect_type": "Unexpected Task Result",
+        "defect_desc": "The save button does not save the note as expected, and auto-save also fails to save the content in some cases.",
+        "instructions": {
+            "defects_oriented": [
+                "Create a new file named 'Test' in the current directory, write the content with 'Test Content', save it and return to the main interface to check."
+            ],
+            "exploration_oriented": [
+                "Create a note named 'Meeting' with content 'Discuss project timeline', then create another note named 'Todo' with content 'Buy groceries'.",
+                "Create a note called 'Draft', write 'Test content' inside, return to the main page, then reopen the note to verify the content is saved."
+            ]
+        },
+        "defect_info": {
+            "github_link": "https://github.com/gsantner/markor/issues/331",
+            "reproduce_step": 6
+        },
+        "app_info": {
+            "apk_name": "Markor",
+            "apk_version": "markor-v1.0.2.apk",
+            "activity": "net.gsantner.markor/.activity.MainActivity",
+            "app_desc": "Markor is a free and open-source text editor for Android that is lightweight, versatile, and works offline. It is designed for creating and managing notes, lists, and documents using simple markup formats like Markdown and todo.txt. Key features include file interoperability, support for various formats, and offline functionality.",
+            "app_cate": "Editing"
+        },
+        "eval": {
+            "judge_method": "llm",
+            "observation": "reproduce/markor/6.png",
+            "action_type": "click",
+            "bbox": [
+                [
+                    0,
+                    128
+                ],
+                [
+                    147,
+                    275
+                ]
+            ],
+            "text": null,
+            "direction": null,
+            "add_info": "**Defect Description**: The created note file cannot be saved.\\n\\n**Preconditions**:\\n1. Clicking \"+\" icon to create a note.\\n2. The title and note content information have been entered (e.g., title: Test; content: Test Content).\\n3. Clicking \"Save\".\\n\\n**Trigger Action**: Clicking \"Navigate Up\" (small arrow in the upper left corner).\\n\\n**Expected Behavior**: The created note information should be visible on the main interface.\\n\\n**Actual Behavior**: The created note information is not visible on the main interface.\\n\\n**Conclusion**: GUI Defect: The note creation logic is abnormal, belonging to Unexpected Task Result."
+        }
+    },
+    {
+        "defect_id": "opentracks-3_7_3",
+        "app_name": "opentracks-3_7_3",
+        "defect_cate": "UI",
+        "defect_type": "Operation No Response",
+        "defect_desc": "No feedback or action occurs after user interaction with the links.",
+        "instructions": {
+            "defects_oriented": [
+                "Open the menu, go to 'Settings,' and then click 'Help' to view the help documentation. Then return to the settings interface."
+            ],
+            "exploration_oriented": [
+                "Check the Help page to learn about OpenTracks features, then go back and start recording a new track.",
+                "Read the Help documentation to understand how GPS tracking works, then return to the main screen and check my recorded tracks.",
+                "Open the Help page to see how to show tracks on a map, then go back and open Settings to configure the app.",
+                "Look at the Help section to learn about markers, then return and create a new marker on my current track.",
+                "Check the FAQ in Help about how data is recorded, then navigate back to view my track statistics.",
+                "Read the Help page about heart rate sensor support, then return to the main screen to start a workout."
+            ]
+        },
+        "defect_info": {
+            "github_link": "https://github.com/OpenTracksApp/OpenTracks/issues/232",
+            "reproduce_step": 4
+        },
+        "app_info": {
+            "apk_name": "OpenTracks",
+            "apk_version": "opentracks-v3_7_3.apk",
+            "activity": "de.dennisguse.opentracks/.TrackListActivity",
+            "app_desc": "A sport tracking buddy that respects your privacy.\\n\\nSport and outdoor activities grants happiness, skill and confidence.\\n\\nValue your health by keeping track on your training.\\nRecords as you go running or walking, and gives you a bike computer with a bigger screen for cycling.\\nMark interesting locations along your way with pictures.\\nKeep recorded statistics in great detail for analysis.\\nShare only the data you want others to have.\\n\\n* Voice announcements.\\n* Supports Bluetooth LE sensors: heart rate, speed and distance (cycling), cadence (cycling), and power meter (cycling).\\n* Altitude gain and loss: via barometric sensor.\\n* Altitude shown in EGM2008 (above mean sea level); exported as WGS84.\\n* Export data as tracks either as KMZ (incl. photos), KML, or GPX.\\n* No Internet access or extra permissions.\\n* Dark and light theme, respecting system settings.\\n* No ads.\\n\\nLibre software / Free Software / Open Source\\nmeaning you can use, study, change and share the source code.\\nLicensed Apache 2.0\\n",
+            "app_cate": "Sports,Health"
+        },
+        "eval": {
+            "judge_method": "rule",
+            "observation": "reproduce/opentracks-3_7_3/4.png",
+            "action_type": "click",
+            "bbox": [
+                [
+                    0,
+                    128
+                ],
+                [
+                    147,
+                    275
+                ]
+            ],
+            "text": null,
+            "direction": null,
+            "add_info": null
+        }
+    },
+    {
+        "defect_id": "opentracks-4_12-4",
+        "app_name": "opentracks-4_12-4",
+        "defect_cate": "UI",
+        "defect_type": "Operation No Response",
+        "defect_desc": "The back arrow in settings menus does not respond to user interaction.",
+        "instructions": {
+            "defects_oriented": [
+                "Open More Options, select Settings, then navigate back to the previous screen.",
+                "Access the More Options menu, open Settings, and click Navigate Up to go back."
+            ],
+            "exploration_oriented": [
+                "Go to the settings page, then return to the main screen so I can start a new GPS recording.",
+                "Go to the settings page and then open the map view to see my recorded routes or current location.",
+                "Go to the settings page, then return to the home tab to check today’s activity summary."
+            ]
+        },
+        "defect_info": {
+            "github_link": "https://github.com/OpenTracksApp/OpenTracks/issues/1932",
+            "reproduce_step": 3
+        },
+        "app_info": {
+            "apk_name": "OpenTracks",
+            "apk_version": "opentracks-v4_12_4.apk",
+            "activity": "de.dennisguse.opentracks/.introduction.IntroductionActivity",
+            "app_desc": "A sport tracking buddy that respects your privacy.\\n\\nSport and outdoor activities grants happiness, skill and confidence.\\n\\nValue your health by keeping track on your training.\\nRecords as you go running or walking, and gives you a bike computer with a bigger screen for cycling.\\nMark interesting locations along your way with pictures.\\nKeep recorded statistics in great detail for analysis.\\nShare only the data you want others to have.\\n\\n* Voice announcements.\\n* Supports Bluetooth LE sensors: heart rate, speed and distance (cycling), cadence (cycling), and power meter (cycling).\\n* Altitude gain and loss: via barometric sensor.\\n* Altitude shown in EGM2008 (above mean sea level); exported as WGS84.\\n* Export data as tracks either as KMZ (incl. photos), KML, or GPX.\\n* No Internet access or extra permissions.\\n* Dark and light theme, respecting system settings.\\n* No ads.\\n\\nLibre software / Free Software / Open Source\\nmeaning you can use, study, change and share the source code.\\nLicensed Apache 2.0\\n",
+            "app_cate": "Sports,Health"
+        },
+        "eval": {
+            "judge_method": "rule",
+            "observation": "reproduce/opentracks-4_12-4/3.png",
+            "action_type": "click",
+            "bbox": [
+                [
+                    11,
+                    2127
+                ],
+                [
+                    137,
+                    2337
+                ]
+            ],
+            "text": null,
+            "direction": null,
+            "add_info": null
+        }
+    },
+    {
+        "defect_id": "owntracks",
+        "app_name": "owntracks",
+        "defect_cate": "UI",
+        "defect_type": "Unexpected Task Result",
+        "defect_desc": "The app does not allow negative numbers in the longitude field, which is an unexpected limitation.",
+        "instructions": {
+            "defects_oriented": [
+                "Please create the waypoint for Liverpool. The latitude is 53.4106 and longitude is -2.97794."
+            ],
+            "exploration_oriented": [
+                "Please create the waypoint for NYC. The latitude is 40.73 and longitude is -73.94.",
+                "Create a new waypoint manually, set the latitude to 40.71 and the longitude to -74.00 for New York, then save it.",
+                "Set up a new waypoint for 'Home', manually type in 38.90 for latitude and -77.03 for longitude, and try to save the location.",
+                "Open the map menu to add a waypoint manually, input 37.77 for latitude and -122.41 for longitude, and tap save."
+            ]
+        },
+        "defect_info": {
+            "github_link": "https://github.com/owntracks/android/issues/1765",
+            "reproduce_step": 6
+        },
+        "app_info": {
+            "apk_name": "OwnTracks",
+            "apk_version": "owntracks-v2_5_0.apk",
+            "activity": "org.owntracks.android/.ui.map.MapActivity",
+            "app_desc": "OwnTracks is a free, open-source mobile application for iOS and Android that allows users to track their location privately by sending data to a self-hosted server instead of a cloud service. It is designed for personal use or for sharing location with family and friends, and it supports features like regional geofencing for home automation and creating a location history or \"diary\"",
+            "app_cate": "Development,Navigation"
+        },
+        "eval": {
+            "judge_method": "llm",
+            "observation": "reproduce/owntracks/11.png",
+            "action_type": "input_text",
+            "bbox": [
+                [
+                    42,
+                    693
+                ],
+                [
+                    1038,
+                    839
+                ]
+            ],
+            "text": "\"-2.97794\"",
+            "direction": null,
+            "add_info": "**Defect Description**: Unable to insert latitude or longitude information with negative numbers.\\n\\n**Preconditions**:\\n1. Opening the menu.\\n2. Clicking '+' icon to create a new waypoint (taking Liverpool as an example).\\n\\n**Triggering Action**: Entering information with negative numbers in the latitude or longitude field;\\n\\n**Expected Behavior**: Latitude or longitude information with a negative sign should display correctly.\\n\\n**Actual Behavior**: The negative sign cannot be displayed; only the numerical part is displayed.\\n\\n**Conclusion**: GUI Defect: Input field does not support negative numbers, belonging to Unexpected Task Result."
+        }
+    }
+]

@@ -1,0 +1,16 @@
+worker:
+  llms: ui-tars-1.5-7b
+  temperature: 0.1
+  max_tokens: 4096
+  sys_prompt: prompt-uitars-system.md
+
+parser:
+  llms: gpt-4o
+  temperature: 1.0
+  max_tokens: 2048
+  sys_prompt: prompt-parser-system.md
+  user_prompt: prompt-parser-user.md
+
+use_set_of_marks: false
+original_image_width: 1080
+original_image_height: 2400
