@@ -1,0 +1,4 @@
+[
+  "Create a note named 'Meeting' with content 'Discuss project timeline', then create another note named 'Todo' with content 'Buy groceries'.",
+  "Create a note called 'Draft', write 'Test content' inside, return to the main page, then reopen the note to verify the content is saved."
+]

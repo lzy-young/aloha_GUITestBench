@@ -1,0 +1,515 @@
+{
+    "broccoli": [
+        {
+            "title": "Classic Scrambled Eggs with Tomato",
+            "description": "Simple to make, nutritious and delicious",
+            "servings": "2 servings",
+            "preparationTime": "15 mins",
+            "ingredients": "3 eggs, 2 tomatoes, salt, sugar, oil",
+            "directions": "1. Beat and scramble eggs, set aside 2. Stir-fry tomatoes until soft 3. Add eggs and mix 4. Season and serve",
+            "favorite": 1
+        },
+        {
+            "title": "Green Pepper and Pork Stir-fry",
+            "description": "Classic home-cooked dish, perfect with rice",
+            "servings": "3 servings",
+            "preparationTime": "20 mins",
+            "ingredients": "200g pork, 3 green peppers, soy sauce, cooking wine, starch, oil, salt",
+            "directions": "1. Marinate pork strips 2. Slice green peppers 3. Stir-fry pork then peppers 4. Combine and mix well",
+            "favorite": 0
+        },
+        {
+            "title": "Kung Pao Chicken",
+            "description": "Spicy and savory Sichuan classic",
+            "servings": "3 servings",
+            "preparationTime": "25 mins",
+            "ingredients": "300g chicken breast, peanuts, dried chilies, soy sauce, vinegar, sugar, cornstarch",
+            "directions": "1. Dice chicken and marinate 2. Toast peanuts 3. Stir-fry chicken with chilies 4. Add sauce and peanuts",
+            "favorite": 1
+        },
+        {
+            "title": "Mapo Tofu",
+            "description": "Spicy, numbing, and incredibly flavorful",
+            "servings": "2 servings",
+            "preparationTime": "20 mins",
+            "ingredients": "1 block tofu, 100g ground pork, doubanjiang, Sichuan peppercorns, garlic, scallions",
+            "directions": "1. Cut tofu into cubes 2. Brown ground pork 3. Add doubanjiang and aromatics 4. Simmer with tofu",
+            "favorite": 0
+        },
+        {
+            "title": "Sweet and Sour Pork",
+            "description": "Crispy pork with tangy glaze",
+            "servings": "3 servings",
+            "preparationTime": "30 mins",
+            "ingredients": "400g pork loin, bell peppers, pineapple, vinegar, ketchup, sugar, cornstarch",
+            "directions": "1. Cut and coat pork, deep fry 2. Prepare sweet and sour sauce 3. Stir-fry vegetables 4. Combine all with sauce",
+            "favorite": 1
+        },
+        {
+            "title": "Garlic Bok Choy",
+            "description": "Quick and healthy vegetable side",
+            "servings": "2 servings",
+            "preparationTime": "10 mins",
+            "ingredients": "300g bok choy, 4 cloves garlic, oyster sauce, oil, salt",
+            "directions": "1. Blanch bok choy briefly 2. Sauté minced garlic 3. Add bok choy and stir-fry 4. Season with oyster sauce",
+            "favorite": 0
+        },
+        {
+            "title": "Mango Sago Pudding",
+            "description": "Refreshing dessert, perfect for summer",
+            "servings": "2 servings",
+            "preparationTime": "30 mins",
+            "ingredients": "2 mangoes, 50g sago pearls, 200ml coconut milk, 100ml milk, sugar",
+            "directions": "1. Cook sago and rinse with cold water 2. Dice mangoes 3. Mix coconut milk and milk 4. Combine all ingredients",
+            "favorite": 1
+        },
+        {
+            "title": "Red Bean Soup",
+            "description": "Traditional Chinese sweet soup",
+            "servings": "4 servings",
+            "preparationTime": "90 mins",
+            "ingredients": "200g red beans, rock sugar, dried tangerine peel, water",
+            "directions": "1. Soak red beans overnight 2. Boil with tangerine peel 3. Simmer until beans are soft 4. Add rock sugar to taste",
+            "favorite": 0
+        },
+        {
+            "title": "Egg Tarts",
+            "description": "Flaky pastry with creamy custard filling",
+            "servings": "12 tarts",
+            "preparationTime": "45 mins",
+            "ingredients": "Puff pastry, 3 eggs, 150ml milk, 80g sugar, vanilla extract",
+            "directions": "1. Line muffin tin with pastry 2. Whisk eggs, milk, and sugar 3. Pour into shells 4. Bake at 200°C for 20 mins",
+            "favorite": 1
+        },
+        {
+            "title": "Black Sesame Soup",
+            "description": "Nutty and aromatic warm dessert",
+            "servings": "3 servings",
+            "preparationTime": "25 mins",
+            "ingredients": "100g black sesame seeds, 50g rice, rock sugar, water",
+            "directions": "1. Toast sesame seeds and rice 2. Grind into fine powder 3. Simmer with water 4. Add sugar and stir until thick",
+            "favorite": 1
+        },
+        {
+            "title": "Tangyuan (Sweet Rice Balls)",
+            "description": "Chewy glutinous rice balls with sweet filling",
+            "servings": "4 servings",
+            "preparationTime": "40 mins",
+            "ingredients": "200g glutinous rice flour, black sesame paste, sugar, warm water",
+            "directions": "1. Mix flour with water to form dough 2. Wrap sesame filling 3. Boil in water until they float 4. Serve in sweet broth",
+            "favorite": 0
+        },
+        {
+            "title": "Panna Cotta with Lychee",
+            "description": "Creamy Italian dessert with Asian twist",
+            "servings": "4 servings",
+            "preparationTime": "4 hours",
+            "ingredients": "300ml heavy cream, 100ml milk, 40g sugar, gelatin, lychees, rose water",
+            "directions": "1. Heat cream, milk, and sugar 2. Dissolve gelatin 3. Pour into molds 4. Chill and top with lychees",
+            "favorite": 1
+        },
+        {
+            "title": "Steamed Egg Custard",
+            "description": "Silky smooth and nutritious, suitable for all ages",
+            "servings": "1 serving",
+            "preparationTime": "20 mins",
+            "ingredients": "2 eggs, warm water, salt, oil, scallions",
+            "directions": "1. Beat eggs with warm water 2. Skim off foam 3. Steam for 8 minutes 4. Season with oil and scallions",
+            "favorite": 0
+        },
+        {
+            "title": "Stir-fried Broccoli",
+            "description": "Light and healthy, rich in vitamin C",
+            "servings": "2 servings",
+            "preparationTime": "15 mins",
+            "ingredients": "300g broccoli, garlic, salt, oil",
+            "directions": "1. Blanch broccoli 2. Sauté garlic until fragrant 3. Add broccoli and stir-fry 4. Season and serve",
+            "favorite": 1
+        },
+        {
+            "title": "Quinoa Buddha Bowl",
+            "description": "Protein-packed superfood bowl",
+            "servings": "2 servings",
+            "preparationTime": "25 mins",
+            "ingredients": "150g quinoa, chickpeas, avocado, cherry tomatoes, spinach, lemon tahini dressing",
+            "directions": "1. Cook quinoa according to package 2. Roast chickpeas 3. Prepare vegetables 4. Assemble bowl and drizzle dressing",
+            "favorite": 1
+        },
+        {
+            "title": "Miso Soup with Tofu",
+            "description": "Light and probiotic-rich Japanese classic",
+            "servings": "2 servings",
+            "preparationTime": "15 mins",
+            "ingredients": "2 tbsp miso paste, 200g silken tofu, wakame seaweed, dashi stock, scallions",
+            "directions": "1. Heat dashi stock 2. Add tofu cubes and seaweed 3. Dissolve miso paste 4. Garnish with scallions",
+            "favorite": 0
+        },
+        {
+            "title": "Grilled Salmon with Asparagus",
+            "description": "Omega-3 rich and low-carb meal",
+            "servings": "2 servings",
+            "preparationTime": "20 mins",
+            "ingredients": "2 salmon fillets, 200g asparagus, lemon, olive oil, herbs, salt, pepper",
+            "directions": "1. Season salmon with herbs 2. Grill salmon 4-5 mins per side 3. Roast asparagus 4. Serve with lemon",
+            "favorite": 1
+        },
+        {
+            "title": "Zucchini Noodles with Pesto",
+            "description": "Low-calorie pasta alternative",
+            "servings": "2 servings",
+            "preparationTime": "15 mins",
+            "ingredients": "3 zucchinis, basil pesto, cherry tomatoes, parmesan, pine nuts",
+            "directions": "1. Spiralize zucchini into noodles 2. Lightly sauté zoodles 3. Toss with pesto 4. Top with tomatoes and cheese",
+            "favorite": 0
+        },
+        {
+            "title": "Overnight Oats with Berries",
+            "description": "No-cook breakfast full of fiber",
+            "servings": "1 serving",
+            "preparationTime": "5 mins + overnight",
+            "ingredients": "50g rolled oats, 150ml almond milk, chia seeds, mixed berries, honey, yogurt",
+            "directions": "1. Mix oats, milk, and chia seeds 2. Refrigerate overnight 3. Top with berries and yogurt 4. Drizzle with honey",
+            "favorite": 1
+        }
+    ], 
+    "tasks": [
+        {
+            "title": "Organize closet",
+            "notes": "Sort clothes by season and donate items not worn in past year",
+            "importance": 0,
+            "completed": true
+        },
+        {
+            "title": "Organize photos",
+            "notes": "Create folders by year and event, backup to cloud storage",
+            "importance": 2,
+            "due_date": "2025-12-12 15:33:28",
+            "completed": true
+        },
+        {
+            "title": "Water plants",
+            "notes": "Check soil moisture first, especially the ferns and succulents",
+            "importance": 3,
+            "due_date": "2025-11-29 15:33:28", 
+            "completed": true
+        },
+        {
+            "title": "Clean refrigerator",
+            "notes": "Remove expired items, wipe shelves, organize by food category",
+            "importance": 0,
+            "due_date": "2025-12-14 15:33:28", 
+            "completed": true
+        },
+        {
+            "title": "Contact supplier",
+            "notes": "Discuss Q4 order quantities and delivery schedule",
+            "importance": 1,
+            "due_date": "2025-11-21 15:33:28", 
+            "completed": true
+        },
+        {
+            "title": "Pay bills",
+            "notes": "Electricity, water, internet, and credit card due this week",
+            "importance": 3,
+            "due_date": "2025-12-09 15:33:28", 
+            "completed": true
+        },
+        {
+            "title": "Exercise",
+            "notes": "30 minutes cardio and 20 minutes strength training",
+            "importance": 2
+        },
+        {
+            "title": "Buy birthday gift",
+            "notes": "Consider books or kitchen gadgets, budget around $50",
+            "importance": 2,
+            "due_date": "2025-12-04 15:33:28", 
+            "completed": true
+        },
+        {
+            "title": "Make budget",
+            "notes": "Review last month expenses and set limits for groceries, entertainment, and savings",
+            "importance": 0
+        },
+        {
+            "title": "Backup computer files",
+            "notes": "Include documents, photos, and project files to external drive",
+            "importance": 0,
+            "due_date": "2025-11-30 15:33:28",
+            "completed": true
+        },
+        {
+            "title": "Read new book",
+            "notes": "Start 'Atomic Habits', aim for at least one chapter per day",
+            "importance": 3,
+            "due_date": "2025-11-21 15:33:28",
+            "completed": true
+        },
+        {
+            "title": "Learn to cook new dish",
+            "notes": "Try Thai green curry recipe, gather ingredients beforehand",
+            "importance": 3,
+            "due_date": "2025-11-21 15:33:28"
+        },
+        {
+            "title": "Plan travel route",
+            "notes": "Research attractions, book hotels, and check visa requirements",
+            "importance": 1,
+            "completed": true
+        },
+        {
+            "title": "Take dog to vet",
+            "notes": "Annual checkup and vaccination, bring previous medical records",
+            "importance": 3,
+            "due_date": "2025-12-05 15:33:28"
+        },
+        {
+            "title": "Update resume",
+            "notes": "Add recent projects and certifications, tailor for job applications",
+            "importance": 1,
+            "due_date": "2025-11-24 15:33:28"
+        }
+    ], 
+    "markor": [
+        {
+            "name": "grocery_list_weekly.md",
+            "content": "# 每周购物清单\n\n- 牛奶\n- 鸡蛋\n- 面包\n- 水果\n- 蔬菜\n\n下次购买: 牛肉、鱼、大米"
+        },
+        {
+            "name": "meeting_notes_project_team.md",
+            "content": "# 项目团队会议纪要\n\n**日期**: 2023年11月14日\n\n## 出席人员\n- 张三\n- 李四\n- 王五\n\n## 讨论议题\n1. 项目进度更新\n2. 预算审核\n3. 时间线调整\n\n## 待办事项\n- 张三: 完成前端设计\n- 李四: 后端接口开发\n- 王五: 测试计划"
+        },
+        {
+            "name": "personal_goals_2024.md",
+            "content": "# 2024年个人目标\n\n## 职业发展\n- 提升技能水平\n- 完成专业认证\n- 寻找晋升机会\n\n## 健康生活\n- 每周锻炼3次\n- 均衡饮食\n- 规律作息\n\n## 个人兴趣\n- 学习一门新语言\n- 阅读20本书\n- 旅行3个地方"
+        },
+        {
+            "name": "reading_list_2024.md",
+            "content": "# 2024年阅读清单\n\n## 已完成\n1. 《百年孤独》 - 加西亚·马尔克斯\n2. 《三体》 - 刘慈欣\n\n## 计划阅读\n3. 《人类简史》 - 尤瓦尔·赫拉利\n4. 《未来简史》 - 尤瓦尔·赫拉利\n5. 《活着》 - 余华\n6. 《平凡的世界》 - 路遥\n7. 《围城》 - 錫鍾书\n8. 《1984》 - 乔治·奥威尔"
+        },
+        {
+            "name": "recipe_homemade_pizza.md",
+            "content": "# 自制披萨食谱\n\n## 材料\n- 高筋面粉 300g\n- 温水 200ml\n- 酵母 5g\n- 盐 5g\n- 橄榄油 15ml\n- 番茄酱 适量\n- 芝士 200g\n- 配菜: 蘑菇、青椒、洋葱\n\n## 步骤\n1. 酵母用温水化开，加入面粉、盐、橄榄油揉成面团\n2. 发酵1小时至两倍大小\n3. 擀成饼状，涂抹番茄酱\n4. 撒上芝士和配菜\n5. 烤箱220度烤15-20分钟"
+        },
+        {
+            "name": "python_learning_goals.md",
+            "content": "# Python 学习目标\n\n## 基础阶段\n- [x] 变数和变量\n- [x] 条件语句\n- [x] 循环语句\n- [ ] 列表和元组\n- [ ] 字典和集合\n- [ ] 函数和模块\n\n## 进阶阶段\n- [ ] 面向对象编程\n- [ ] 异常处理\n- [ ] 文件操作\n- [ ] 正则表达式\n- [ ] 调试技巧\n\n## 项目实践\n- [ ] 简单计算器\n- [ ] 笔记管理器\n- [ ] 数据分析项目"
+        },
+        {
+            "name": "travel_itinerary_tokyo.md",
+            "content": "# 东京旅行行程\n\n## 第一天: 抵达与浅草\n- 上午: 抵达东京，入住酒店\n- 下午: 浅草寺参观，仲见世商店街购物\n- 晚上: 浅草附近品尝传统料理\n\n## 第二天: 东京塔与银座\n- 上午: 登东京塔\n- 下午: 银座购物\n- 晚上: 银座晚餐\n\n## 第三天: 迪谷与原宿\n- 上午: 骈谷逛街\n- 下午: 原宿竹下通，明治神宫\n- 晚上: 涩谷十字路口体验\n\n## 第四天: 上野与秋叶原\n- 上午: 上野恩赐公园\n- 下午: 东京国立博物馆\n- 晚上: 秋叶原电器街\n\n## 第五天: 返程\n- 上午: 购买土产\n- 下午: 返程"
+        },
+        {
+            "name": "workout_routine_january.md",
+            "content": "# 一月份健身计划\n\n## 周一：胸肌 + 三头肌\n- 卧 bench press: 4组 x 8-10次\n- 哑铃飞鸟: 3组 x 12次\n- 俯卧撑: 3组 x 15次\n- 窄距俯卧撑: 3组 x 10次\n- 绳索下压: 3组 x 12次\n\n## 周三：背肌 + 二头肌\n- 引引体向上: 4组 x 8次\n- 哑铃划船: 3组 x 10次\n- 杠铃弯举: 3组 x 12次\n- 锤式弯举: 3组 x 10次\n\n## 周五：腿部 + 肩膀\n- 深蹲: 4组 x 10次\n- 腿举: 3组 x 12次\n- 肩上推举: 3组 x 10次\n- 侧平举: 3组 x 15次"
+        },
+        {
+            "name": "book_quotes_collection.md",
+            "content": "# 书籍名言摘录\n\n## 《活着》- 余华\n> \"人是为活着本身而活着，而不是为了活着之外的任何事物所活着。\"\n\n## 《人类简史》- 尤瓦尔·赫拉利\n> \"快乐不在于客观成就，而在于主观期望。\"\n\n## 《1984》- 乔治·奥威尔\n> \"谁控制过去就控制未来；谁控制现在就控制过去。\"\n\n## 《三体》- 刘慈欣\n> \"弱小和无知不是生存的障碍，傲慢才是。\"\n\n## 《百年孤独》- 加西亚·马尔克斯\n> \"生命中真正重要的不是你遭遇了什么，而是你记住了哪些事，又是如何铭记的。\""
+        },
+        {
+            "name": "budget_house_renovation.md",
+            "content": "# 房屋装修预算\n\n## 客厅\n- 墙面涂料: ¥5,000\n- 地板: ¥8,000\n- 沙发: ¥6,000\n- 茶几: ¥2,000\n- 电视柜: ¥3,000\n\n## 卧室\n- 床: ¥4,000\n- 衣柜: ¥7,000\n- 床头柜: ¥1,500 x 2\n- 窗帘: ¥2,000\n\n## 厨房\n- 橱柜: ¥15,000\n- 灶具: ¥3,000\n- 冰箱: ¥5,000\n\n## 总计: ¥61,500"
+        }
+    ], 
+    "owntracks": [
+        {
+            "latitude": -35.2809,
+            "longitude": 149.13,
+            "accuracy": 20,
+            "altitude": 556,
+            "battery": 90,
+            "device_id": "test_device",
+            "timestamp": 1763283399,
+            "topic": "owntracks/user1/trip",
+            "event": "update",
+            "description": "Canberra, Australia"
+        },
+        {
+            "latitude": -33.8688,
+            "longitude": 151.2093,
+            "accuracy": 20,
+            "altitude": 44,
+            "battery": 85,
+            "device_id": "test_device",
+            "timestamp": 1763290599,
+            "topic": "owntracks/user1/trip",
+            "event": "update",
+            "description": "Sydney, Australia"
+        },
+        {
+            "latitude": -34.6037,
+            "longitude": -58.3816,
+            "accuracy": 20,
+            "altitude": 25,
+            "battery": 80,
+            "device_id": "test_device",
+            "timestamp": 1763297799,
+            "topic": "owntracks/user1/trip",
+            "event": "update",
+            "description": "Buenos Aires, Argentina"
+        },
+        {
+            "latitude": -22.9068,
+            "longitude": -43.1729,
+            "accuracy": 20,
+            "altitude": 1172,
+            "battery": 75,
+            "device_id": "test_device",
+            "timestamp": 1763304999,
+            "topic": "owntracks/user1/trip",
+            "event": "update",
+            "description": "Brasilia, Brazil"
+        },
+        {
+            "latitude": -41.2865,
+            "longitude": 174.7762,
+            "accuracy": 20,
+            "altitude": 13,
+            "battery": 70,
+            "device_id": "test_device",
+            "timestamp": 1763312199,
+            "topic": "owntracks/user1/trip",
+            "event": "update",
+            "description": "Wellington, New Zealand"
+        }, 
+        {
+            "latitude": 51.5074,
+            "longitude": -0.1278,
+            "accuracy": 20,
+            "altitude": 35,
+            "battery": 95,
+            "device_id": "test_device",
+            "timestamp": 1763319399,
+            "topic": "owntracks/user1/trip",
+            "event": "update",
+            "description": "London, UK"
+        },
+        {
+            "latitude": 48.8566,
+            "longitude": 2.3522,
+            "accuracy": 20,
+            "altitude": 35,
+            "battery": 90,
+            "device_id": "test_device",
+            "timestamp": 1763326599,
+            "topic": "owntracks/user1/trip",
+            "event": "update",
+            "description": "Paris, France"
+        },
+        {
+            "latitude": 40.4168,
+            "longitude": -3.7038,
+            "accuracy": 20,
+            "altitude": 665,
+            "battery": 85,
+            "device_id": "test_device",
+            "timestamp": 1763333799,
+            "topic": "owntracks/user1/trip",
+            "event": "update",
+            "description": "Madrid, Spain"
+        },
+        {
+            "latitude": 41.9028,
+            "longitude": 12.4964,
+            "accuracy": 20,
+            "altitude": 21,
+            "battery": 80,
+            "device_id": "test_device",
+            "timestamp": 1763340999,
+            "topic": "owntracks/user1/trip",
+            "event": "update",
+            "description": "Rome, Italy"
+        },
+        {
+            "latitude": 35.6895,
+            "longitude": 139.6917,
+            "accuracy": 20,
+            "altitude": 44,
+            "battery": 75,
+            "device_id": "test_device",
+            "timestamp": 1763348199,
+            "topic": "owntracks/user1/trip",
+            "event": "update",
+            "description": "Tokyo, Japan"
+        }
+    ], 
+    "catima": "./GUITestBench/database/catima.zip", 
+    "ankidroid-2_14": [
+        {
+            "front": "什么是深度学习?",
+            "back": "深度学习是机器学习的一个分支，使用多层神经网络来学习数据的表示",
+            "tags": "AI 深度学习"
+        },
+        {
+            "front": "什么是卷积神经网络(CNN)?",
+            "back": "CNN是一种专门用于处理网格状数据（如图像）的深度学习模型",
+            "tags": "AI CNN 计算机视觉"
+        },
+        {
+            "front": "什么是循环神经网络(RNN)?",
+            "back": "RNN是一种能够处理序列数据的神经网络，具有记忆功能",
+            "tags": "AI RNN 序列模型"
+        },
+        {
+            "front": "什么是Transformer?",
+            "back": "Transformer是基于自注意力机制的深度学习模型，是现代NLP的基础架构",
+            "tags": "AI Transformer NLP"
+        },
+        {
+            "front": "什么是BERT?",
+            "back": "BERT(Bidirectional Encoder Representations from Transformers)是Google开发的预训练语言模型",
+            "tags": "AI BERT NLP"
+        },
+        {
+            "front": "什么是GPT?",
+            "back": "GPT(Generative Pre-trained Transformer)是OpenAI开发的自回归语言模型",
+            "tags": "AI GPT NLP"
+        },
+        {
+            "front": "什么是强化学习?",
+            "back": "强化学习是通过与环境交互，通过奖励信号来学习最优策略的机器学习方法",
+            "tags": "AI 强化学习"
+        },
+        {
+            "front": "什么是梯度下降?",
+            "back": "梯度下降是一种优化算法，通过沿着损失函数梯度的反方向更新参数来最小化损失",
+            "tags": "优化算法"
+        },
+        {
+            "front": "什么是过拟合?",
+            "back": "过拟合是指模型在训练数据上表现很好，但在新数据上表现较差的现象",
+            "tags": "机器学习 模型评估"
+        },
+        {
+            "front": "什么是正则化?",
+            "back": "正则化是防止过拟合的技术，通过在损失函数中添加惩罚项来约束模型复杂度",
+            "tags": "机器学习 正则化"
+        },
+        {
+            "front": "什么是反向传播?",
+            "back": "反向传播是训练神经网络的核心算法，通过链式法则计算梯度",
+            "tags": "神经网络 算法"
+        },
+        {
+            "front": "什么是激活函数?",
+            "back": "激活函数为神经网络引入非线性，常见的有ReLU、Sigmoid、Tanh",
+            "tags": "神经网络"
+        },
+        {
+            "front": "什么是批归一化(Batch Normalization)?",
+            "back": "批归一化通过标准化层输入来加速训练并提高模型稳定性",
+            "tags": "深度学习 优化"
+        },
+        {
+            "front": "什么是Dropout?",
+            "back": "Dropout是一种正则化技术，训练时随机丢弃神经元以防止过拟合",
+            "tags": "正则化 深度学习"
+        },
+        {
+            "front": "什么是迁移学习?",
+            "back": "迁移学习是将在一个任务上学到的知识应用到另一个相关任务上",
+            "tags": "机器学习"
+        }
+    ]
+}

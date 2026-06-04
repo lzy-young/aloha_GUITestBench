@@ -1,0 +1,6 @@
+[
+  "Create a directory in Documents folder named ' secret' (with two spaces before secret).",
+  "Create two files in the Documents folder. The first is named with 'testing.log', another file is named with '  report.txt'.",
+  "Create a folder named '  Test' in the Documents folder and inside it create a file named 'notes.txt'.",
+  "Create two files in the Documents folder. The first is named with 'testing  .log', another file is named with '  report.txt'."
+]

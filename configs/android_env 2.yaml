@@ -1,0 +1,13 @@
+# config for Environment
+environment:
+  console_port: 5556
+  grpc_port: 8558
+  adb_path: /your/local/path/to/adb
+  emulator_path: /your/local/path/to/emulator
+  use_set_of_marks: true
+
+# config for Experiment
+experiment:
+  task_seed: 42
+  exp_root: ./experiments-guitester
+  logname: guitest.log

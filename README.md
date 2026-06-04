@@ -15,6 +15,8 @@ Yifei Gao<sup>1</sup>, Jiang Wu<sup>2</sup>, Xiaoyi Chen<sup>1</sup>, Yifan Yang
 GUITestBench enables agents interacting with mobile apps to discover defects through multi-step operations in Android emulators. GUI defects are collected from public issues on GitHub, including UI functional defects and user experience (UX) defects, and further categorized into three defective modes: **Operation No Response** (ONR), **Unexpected Task Results** (UTR) and **Navigation Logic Error** (NLE).
 
 ## News
+* [26/04/10] 📢 We release the GUITestBench dataset (including configs and APKs).
+* [26/04/08] 🎉 Our paper has been accepted as a Findings Paper of ACL 2026.
 * [26/12/2025] 📢 We release the code of GUITestBench.
 
 ## 📊 Dataset Statistics
@@ -32,6 +34,10 @@ We quantify the agent's performance using **Recall** and **F1 Score**
 
 ## 💻 Usage & Quick Start
 Follow these steps to set up the environment and run the evaluation pipeline on GUITestBench.
+
+### 0. Install Dependencies
+* Step1: Install the required defective APKs in `GUITestBench/GUITestBench/apks_source`, please refer [README](GUITestBench/GUITestBench/apks_source/README.md) for details.
+
 
 ### 1. Download Android Emulator
 

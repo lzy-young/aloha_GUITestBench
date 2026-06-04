@@ -1,0 +1,7 @@
+[
+  "Search for 'Phone' item and identify which one has a larger card IDs number.", 
+  "Find which fitness center has the earliest expiry date among all gym membership cards.", 
+  "Collect the full card ID numbers for all Phone-related stores.", 
+  "List the barcode IDs of all Sport-branded reward cards.", 
+  "Search for Food cards whose barcode type is CODE_128."
+]
