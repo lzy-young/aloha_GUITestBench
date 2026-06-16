@@ -1,0 +1,9 @@
+{
+  "timestamp": "2026-03-25T22:08:56.640272",
+  "error_type": "ValueError",
+  "error_message": "UI-TARS response is not a valid JSON object",
+  "context": {
+    "mode": "ui-tars"
+  }
+}
+

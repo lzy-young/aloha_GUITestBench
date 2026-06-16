@@ -13,7 +13,7 @@ if __name__ == '__main__':
     
     argparser = argparse.ArgumentParser()
     argparser.add_argument('--llm', type=str, default='uitars')
-    argparser.add_argument('--config_files', type=str, default='./configs/task')
+    argparser.add_argument('--config_files', type=str, default='./GUITestBench/config_files')
     argparser.add_argument('--test_start_idx', type=int, default=0, help='start index of the task')
     argparser.add_argument('--test_end_idx', type=int, default=100, help='end index of the task')
     args = argparser.parse_args()
@@ -45,11 +45,14 @@ if __name__ == '__main__':
                 task_name=task_name,
                 config_path='./configs/android_env.yaml'
             )
+            print("env created successfully")
             env._init_task(**{
                 'task': task_config.task,
                 'model_name': args.llm,
                 'app_name': task_config.app_name,
             })
             env.run()
-        except:
+        except Exception as e:
+            print(f"Error occurred while running task: {task_name}")
+            print(f"Exception: {e}")
             continue

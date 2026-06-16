@@ -20,7 +20,6 @@ from GUITestBench.app_environment import AppEnvironmentManager
 
 from android_world.agents import m3a_utils
 from android_world.env.json_action import JSONAction
-from android_world.agents.seeact_utils import format_and_filter_elements
 
 MAX_OUTER_LOOPS = 20
 
@@ -146,6 +145,9 @@ class MobileAgentEnv:
                 self.agent = Executor_UITARS_1_5(task=task_str, app_name=app_name)
             case 'guiowl':
                 pass
+            case 'aloha_act':
+                from GUIAgent.aloha_adapter import AlohaActAdapter
+                self.agent = AlohaActAdapter(task=task_str, app_name=app_name)
             case _:
                 raise ValueError(f"Unknown model name: {model_name}")
             
@@ -155,13 +157,17 @@ class MobileAgentEnv:
         )
         
     def get_observation(self) -> None:
+        from android_world.agents.seeact_utils import format_and_filter_elements
         state = self.app_env_manager.get_state(wait_to_stabilize=True)
         time.sleep(1)
-        screenshot_array = state.pixels
-        if len(screenshot_array.shape) == 3:
-            screenshot_image = Image.fromarray(screenshot_array).convert('RGB')
+        screenshot_image = state.pixels
+        if isinstance(screenshot_image, Image.Image):
+            screenshot_image = screenshot_image.convert('RGB')
         else:
-            screenshot_image = Image.fromarray(screenshot_array)
+            if len(screenshot_image.shape) == 3:
+                screenshot_image = Image.fromarray(screenshot_image).convert('RGB')
+            else:
+                screenshot_image = Image.fromarray(screenshot_image)
         
         image_dir = f"{self.state_storage_dir}/screenshot_{self.screenshot_id}.png"
         screenshot_image.save(image_dir)
@@ -210,7 +216,8 @@ class MobileAgentEnv:
     
     def save_trace(self) -> None:
         trace = self.agent.extract_steps()
-        trace.append({'observation': self.observation.image_dir})
+        if hasattr(self, 'observation'):
+            trace.append({'observation': self.observation.image_dir})
         with open(self.trace_storage_dir, 'w', encoding='utf-8') as file:
             json.dump(trace, file, ensure_ascii=False, indent=4)
     
@@ -287,8 +294,19 @@ class MobileAgentEnv:
                         terminated = True
                         break
                     
+                    time.sleep(2)  # wait for the app to respond
                     self.get_observation()
 
         finally:
+            try:
+                from android_world.env import adb_utils
+                adb_utils.close_recents(self.app_env_manager.controller)
+            except Exception:
+                pass
+            try:
+                home_action = JSONAction(action_type='navigate_home')
+                self.app_env_manager.execute_adb_action(home_action, self.observation)
+            except Exception:
+                pass
             self.save_trace()
             self.app_env_manager.close()

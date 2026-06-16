@@ -16,7 +16,6 @@ from android_world.env.json_action import JSONAction
 from android_world.env.actuation import execute_adb_action
 from android_world.env.adb_utils import issue_generic_request
 from android_world.task_evals.utils import sqlite_schema_utils
-from android_world.agents.seeact_utils import format_and_filter_elements
 
 from core.data_model import EnvParams
 from datetime import datetime, timedelta
@@ -40,14 +39,14 @@ class BaseEnviron:
     ):
         self.console_port = console_port
         self.grpc_port = grpc_port
-        self.adb_path = adb_path
-        self.init_env()
+        self.adb_path = adb_path or 'adb'
+        self._init_env()
     
-    def init_env(self) -> None:
-        self.env = env_launcher.load_and_setup_env(
+    def _init_env(self) -> None:
+        from GUIAgent.simple_env import SimpleAdbEnv
+        self.env = SimpleAdbEnv(
             console_port=self.console_port,
             adb_path=self.adb_path,
-            grpc_port=self.grpc_port
         )
         print(f"✅ Environment initialized")
     
@@ -144,6 +143,7 @@ class AppInstallerMixin:
             return False
         
         try:
+            
             adb_utils.install_apk(apk_path, self._controller)
             print(f"✅ {app_name} installed successfully")
             return True
@@ -284,16 +284,24 @@ class PermissionHandlerMixin:
     def get_permission_actions(self, app_name: str) -> List[dict]:
         return self.PERMISSION_ACTIONS.get(app_name.lower(), [])
     
+    @staticmethod
+    def _filter_ui_elements(ui_elements):
+        """Filter UI elements with text, content_description, hint_text or resource_name."""
+        return [
+            e for e in ui_elements
+            if e.class_name and (e.text or e.content_description or e.hint_text or e.resource_name)
+        ]
+    
     def execute_ui_actions(self, action_dicts: List[dict]) -> bool:
         try:
             for index, action_dict in enumerate(action_dicts):
                 action = JSONAction(**action_dict)
                 state = self._env.get_state(wait_to_stabilize=True)
-                text_desc = format_and_filter_elements(state.ui_elements)
+                filtered_elements = self._filter_ui_elements(state.ui_elements)
                 
                 execute_adb_action(
                     action=action, 
-                    screen_elements=[e.ui_element for e in text_desc], 
+                    screen_elements=filtered_elements, 
                     screen_size=self._env.logical_screen_size,
                     env=self._env.controller
                 )
@@ -377,7 +385,7 @@ class DatabaseHandlerMixin:
             adb_utils.close_app(app_name, self._env.controller)  # Register changes
             print("✅ Clear existing tasks")
             
-            tasks = []
+            success_count = 0
             for task_data in tasks_data:
                 due_date_ts = 0
                 completed_ts = 0
@@ -390,36 +398,33 @@ class DatabaseHandlerMixin:
                     completed_datetime = datetime.now() - timedelta(days=random.randint(1, 7))
                     completed_ts = int(completed_datetime.timestamp() * 1000)
                 
-                
                 created_date_ts = due_date_ts - (7 * 24 * 3600 * 1000) if due_date_ts > 0 else int(datetime.now().timestamp() * 1000)
                 
-                task = sqlite_schema_utils.Task(
-                    title=task_data.get('title', 'Untitled Task'),
-                    notes=task_data.get('notes'),
-                    importance=task_data.get('importance', 2),
-                    dueDate=due_date_ts,
-                    completed=completed_ts,
-                    created=created_date_ts,
-                    modified=created_date_ts,
-                    remoteId=str(uuid.uuid4().int),
-                    recurrence=None,
-                    hideUntil=0
+                title = task_data.get('title', 'Untitled Task').replace("'", "''")
+                notes_val = task_data.get('notes')
+                notes_sql = f"'{notes_val.replace(chr(39), chr(39)+chr(39))}'" if notes_val else "NULL"
+                importance = task_data.get('importance', 2)
+                remote_id = str(uuid.uuid4().int)
+                
+                insert_sql = (
+                    f"INSERT INTO tasks (title, importance, dueDate, hideUntil, created, modified, "
+                    f"completed, deleted, notes, estimatedSeconds, elapsedSeconds, timerStart, "
+                    f"notificationFlags, lastNotified, recurrence, repeat_from, calendarUri, "
+                    f"remoteId, collapsed, parent, read_only) "
+                    f"VALUES ('{title}', {importance}, {due_date_ts}, 0, {created_date_ts}, "
+                    f"{created_date_ts}, {completed_ts}, 0, {notes_sql}, 0, 0, 0, 0, 0, "
+                    f"NULL, 0, NULL, '{remote_id}', 0, 0, 0);"
                 )
-                tasks.append(task)
-            
-            # Insert tasks into the database
-            from android_world.task_evals.utils import sqlite_utils
-            sqlite_utils.insert_rows_to_remote_db(
-                tasks,
-                '_id',
-                'tasks',
-                db_path,
-                app_name,
-                self._env
-            )
+                sql_cmd = f"sqlite3 {db_path} \"{insert_sql}\""
+                
+                try:
+                    adb_utils.issue_generic_request(["shell", sql_cmd], self._env.controller)
+                    success_count += 1
+                except Exception as e:
+                    print(f"⚠️ Failed to insert task '{task_data.get('title', '')}': {e}")
             
             adb_utils.close_app(app_name, self._env.controller)  # Register changes
-            print(f"✅ Successfully added {len(tasks)} tasks")
+            print(f"✅ Successfully added {success_count}/{len(tasks_data)} tasks")
             return True
             
         except Exception as e:
@@ -524,12 +529,14 @@ class DatabaseHandlerMixin:
         try:
             response = issue_generic_request(push_command, self._env.controller)
             
-            output = response.generic.output.decode('utf-8') if response.generic.output else ""
-            if response.status == 0 or "file pushed" in output:
+            output = response.generic.output.decode('utf-8', errors='replace') if response.generic.output else ""
+            output_as_string = response.generic.output_as_string if hasattr(response.generic, 'output_as_string') else ""
+            all_output = output + output_as_string
+            if "file pushed" in all_output or response.status == 0:
                 print("✅ File push successful")
             else:
-                print(f"❌ File push failed: {output}")
-                raise RuntimeError(f"Failed to push file to emulator: {output}")
+                print(f"❌ File push failed: {all_output}")
+                raise RuntimeError(f"Failed to push file to emulator: {all_output}")
         except Exception as e:
             print(f"❌ Error in file push: {e}")
             raise
@@ -556,12 +563,12 @@ class DatabaseHandlerMixin:
             for index, action_dict in enumerate(action_dicts):
                 action = JSONAction(**action_dict)
                 state = self._env.get_state(wait_to_stabilize=True)
-                text_desc = format_and_filter_elements(state.ui_elements)
+                filtered_elements = self._filter_ui_elements(state.ui_elements)
                 
                 try:
                     execute_adb_action(
                         action=action, 
-                        screen_elements=[e.ui_element for e in text_desc], 
+                        screen_elements=filtered_elements, 
                         screen_size=self._env.logical_screen_size,
                         env=self._env.controller
                     )

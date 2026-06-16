@@ -1,3 +1,3 @@
 PORT=$1
-export ADB=/your/local/path/to/adb
+export ADB=D:/ProgramData/Sdk/platform-tools/adb.exe
 ${ADB} -s emulator-${PORT} emu kill

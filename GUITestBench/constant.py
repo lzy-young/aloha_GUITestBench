@@ -1,6 +1,6 @@
 import json
 
-with open('./GUITestBench/database/data.json', 'r') as f:
+with open('./GUITestBench/database/data.json', 'r', encoding='utf-8') as f:
     CONDITION = json.load(f)
 
 APK2PATH = {
@@ -13,9 +13,9 @@ APK2PATH = {
     "broccoli": "./GUITestBench/apks_source/broccoli-release-01.apk", 
     "tasks": "./GUITestBench/apks_source/org.tasks_130907-release-02.apk", 
     "ankidroid-2_8_2": "./GUITestBench/apks_source/AnkiDroid-2.8.2.apk", 
-    "ankidroid-2_15": "./GUITestBench/apks_source/AnkiDroid-2.15alpha34-arm64-v8a.apk", 
-    "ankidroid-2_14": "./GUITestBench/apks_source/AnkiDroid-2.14.0-arm64-v8a.apk", 
-    "ankidroid-2_13_5": "./GUITestBench/apks_source/AnkiDroid-2.13.5-arm64-v8a.apk", 
+    "ankidroid-2_15": "./GUITestBench/apks_source/AnkiDroid-2.15alpha34-x86_64.apk", 
+    "ankidroid-2_14": "./GUITestBench/apks_source/AnkiDroid-2.14.0-x86_64.apk", 
+    "ankidroid-2_13_5": "./GUITestBench/apks_source/AnkiDroid-2.13.5-x86_64.apk", 
     "amaze-3_4_3": "./GUITestBench/apks_source/amaze.file.manager.3.4.3.play.apk", 
     "amaze-3_5_3": "./GUITestBench/apks_source/AmazeFileManager-v3.5.3.apk", 
     "catima": "./GUITestBench/apks_source/catima-v2_32_1.apk", 

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "D:\aloha\aloha\Aloha_Act\app_server.py", line 9, in <module>
+    from ui_aloha.act.loop.ui_aloha_loop import ui_aloha_loop
+  File "D:\aloha\aloha\Aloha_Act\ui_aloha\act\loop\ui_aloha_loop.py", line 7, in <module>
+    from ui_aloha.act.gui_agent.vector_db.experience_table import ExperienceTable
+  File "D:\aloha\aloha\Aloha_Act\ui_aloha\act\gui_agent\vector_db\experience_table.py", line 3, in <module>
+    from sentence_transformers import SentenceTransformer
+ModuleNotFoundError: No module named 'sentence_transformers'

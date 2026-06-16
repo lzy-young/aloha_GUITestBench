@@ -2,12 +2,12 @@
 environment:
   console_port: 5556
   grpc_port: 8558
-  adb_path: /your/local/path/to/adb
-  emulator_path: /your/local/path/to/emulator
+  adb_path: D:\ProgramData\Sdk\platform-tools\adb.exe
+  emulator_path: D:\ProgramData\Sdk\emulator\emulator.exe
   use_set_of_marks: true
 
 # config for Experiment
 experiment:
   task_seed: 42
-  exp_root: ./experiments-guitester
+  exp_root: ./experiments-aloha
   logname: guitest.log
